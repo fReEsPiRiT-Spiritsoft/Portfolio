@@ -247,3 +247,79 @@ h2 {
     margin-bottom: 24px;
   }
 }
+
+.main-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 2;
+  padding: 0 40px;
+
+  @include respond(600) {
+    bottom: 16px;
+    padding: 0 12px;
+  }
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  @include respond(600) {
+    gap: 16px;
+  }
+}
+
+.green-line {
+  height: 4px;
+  width: 100px;
+  background: #70E61C;
+  border-radius: 4px;
+  margin-right: 16px;
+  margin-left: -40px;
+
+  @include respond(600) {
+    width: 32px;
+    margin-right: 8px;
+  }
+}
+
+.left-side img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+
+  @include respond(600) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.right-side {
+  writing-mode: vertical-lr;
+  transform: rotate(359deg);
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 0.1em;
+  opacity: 0.8;
+  text-align: center;
+  user-select: none;
+
+  @include respond(600) {
+    font-size: 14px;
+  }
+}
+
+/* Optional: Abstand zum Rand auf ganz kleinen Geräten */
+@media (max-width: 400px) {
+  .main-bottom {
+    bottom: 8px;
+    padding: 0 4px;
+  }
+}

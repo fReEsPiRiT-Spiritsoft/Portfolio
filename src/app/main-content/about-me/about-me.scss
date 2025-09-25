@@ -1,0 +1,129 @@
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // min-height: 500px;
+    gap: 40px;
+    position: relative;
+    width: 100%;
+    max-width: 1920px; // Begrenzung auf 1920px
+    margin: 0 auto;
+    // min-height: 100vh;
+    padding-block: clamp(80px, 8vw, 140px);
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+}
+
+.about-left {
+    flex: 1 1 0;
+    max-width: 480px;
+    color: #fff;
+    z-index: 2;
+    margin-left: 100px;
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 24px;
+        padding: 12px 32px;
+        display: inline-block;
+    }
+
+    .about-details {
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: flex;
+                align-items: flex-start;
+                gap: 12px;
+                margin-bottom: 18px;
+
+                .about-icon {
+                    width: 48px;
+                    height: 48px;
+                    margin-top: 2px;
+                }
+
+                span {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.about-right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+    min-height: 400px;
+    top: 50px;
+
+    .about-shadow {
+        position: absolute;
+        z-index: 1;
+        pointer-events: none;
+        filter: blur(20px);
+        opacity: 0.8;
+        height: 680px;
+        margin-right: 500px;
+    }
+
+    .hero-background {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 500px; 
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .about-image {
+        position: relative;
+        width: 541px;
+        height: auto;
+        z-index: 2;
+        border-radius: 24px;
+        object-fit: cover;
+        right: 300px;
+    }
+}
+
+.hero-background {
+    padding-bottom: 300px;
+}
+
+@media (max-width: 700px) {
+    .about-me {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-right .about-image,
+    .about-right .about-image-bg {
+        width: 220px;
+        height: 280px;
+    }
+
+    .about-left h2 {
+        font-size: 2rem;
+        padding: 8px 18px;
+    }
+}

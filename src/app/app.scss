@@ -1,0 +1,21 @@
+:host {
+  display: block;
+  width: 100%;
+//   max-width: 1440px;
+//   margin: 0 auto;
+  overflow-x: hidden; 
+}
+
+
+app-header,
+app-main-content,
+app-footer {
+  width: 100%;
+  display: block;
+  overflow-x: hidden; 
+  
+
+  @media (max-width: 480px) {
+    min-width: 0; 
+  }
+}

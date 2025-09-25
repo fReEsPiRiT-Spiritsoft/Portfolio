@@ -4,9 +4,69 @@
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; // Verhindert horizontale Scrollbar
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(20, 29, 47);
+}
+
+// Container-Klasse für 1440px maximale Breite und Zentrierung
 .container {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  padding: 0 20px; // Seitliche Abstände für kleinere Bildschirme
+  
+  // Responsive Padding für sehr kleine Bildschirme
+  @media (max-width: 480px) {
+    padding: 0 15px;
+  }
+  
+  @media (max-width: 360px) {
+    padding: 0 10px;
+  }
+  
+  @media (max-width: 320px) {
+    padding: 0 8px;
+  }
 }
+
+// Hauptapp-Container
+app-root {
+  width: 100%;
+  // max-width: 1440px;
+  // margin: 0 auto;
+  display: block;
+  overflow-x: hidden; // Verhindert horizontalen Overflow
+}
+
+.main-content-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1920px; // Begrenzung auf 1920px
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: visible;
+  // top: -184px;
+  padding-top: 150px;
+}
+
+.glow {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  // padding-top: -50px;
+}
+

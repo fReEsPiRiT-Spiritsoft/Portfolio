@@ -14,6 +14,7 @@ app-contact {
     width: 100%;
     display: block;
     overflow-x: hidden; // Verhindert horizontalen Overflow in Sektionen
+    overflow-y: hidden;
 
     // Responsive Behandlung für sehr kleine Bildschirme
     @media (max-width: 480px) {
@@ -34,7 +35,7 @@ app-contact {
 
 .hero-background[_ngcontent-ng-c1459992026] {
     position: absolute;
-    top: clamp(460px, 200vw, 700px);
+    top: clamp(460px, 200vw, 653px);
     left: 50%;
     transform: translateX(-50%);
     width: 100vw;
@@ -52,5 +53,6 @@ app-contact {
     max-width: 1920px;
     margin: 0 auto;
     overflow: hidden;
-    bottom: 373px;
+    // bottom: 373px;
 }
+

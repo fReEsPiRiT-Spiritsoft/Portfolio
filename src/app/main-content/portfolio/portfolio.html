@@ -1,1 +1,41 @@
-<p>portfolio works!</p>
+<section class="portfolio-section">
+    <header class="portfolio-header">
+        <div class="line-help">
+            <div class="purple-line"></div>
+            <h2>Portfolio</h2>
+        </div>
+        <p>Explore a selection of my work here – interact with projects to see my skills in action.</p>
+    </header>
+
+    <div class="portfolio-grid">
+        @for (project of projects; track project.title) {
+        <article class="portfolio-card">
+            <div class="card-frame">
+                <img [src]="project.image" [alt]="project.title" loading="lazy" />
+                
+                <!-- Modal Content - erscheint beim Hover -->
+                <div class="modal-overlay">
+                    <!-- Buttons oben im Bild -->
+                    <div class="card-actions">
+                        <a class="btn btn-outline" [href]="project.codeUrl" target="_blank">Github</a>
+                        <a class="btn btn-primary" [href]="project.liveUrl" target="_blank">Live test</a>
+                    </div>
+                    
+                    <!-- Beschreibung unten im weißen Container -->
+                    <div class="card-body">
+                        <h3>{{ project.title }}</h3>
+                        <p>{{ project.description }}</p>
+                        <ul class="tech-list">
+                            @for (tech of project.tech; track tech) {
+                            <li>{{ tech }}</li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+        }
+    </div>
+
+    <img src="assets/img/green-shadow.png" alt="" class="portfolio-bg-img">
+</section>

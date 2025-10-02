@@ -1,1 +1,46 @@
-<p>references works!</p>
+<section class="references-section">
+    <div class="references-container">
+
+        <!-- Grüne Anführungszeichen links -->
+        <img src="assets/img/marker.png" alt="" class="quote-marker">
+        <div class="content-wrapper">
+            <!-- Referenz-Slider -->
+            <div class="reference-slider">
+                <div class="reference-card">
+                    <div class="reference-content">
+                        <p class="reference-text">
+                            {{ references[currentIndex].text }}
+                        </p>
+                        <div class="reference-author">
+                            <img src="assets/img/blue-line.png" alt="" class="author-line">
+                            <span class="author-name">{{ references[currentIndex].author }} - {{
+                                references[currentIndex].role }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap-green-line">
+                <div class="profile-image">
+                    <img [src]="references[currentIndex].image" [alt]="references[currentIndex].author">
+                </div>
+                <img class="green-line" src="assets/img/green-line-on-pic.png" alt="">
+            </div>
+        </div>
+        
+        <div class="slider-navigation">
+            <img src="assets/img/arrow_back.png" alt="Previous" class="nav-arrow nav-prev"
+                (click)="previousReference()">
+
+            <div class="nav-dots">
+                @for (reference of references; track $index) {
+                <img [src]="$index === currentIndex ? 'assets/img/dot2.png' : 'assets/img/dot1.png'" alt="Dot"
+                    class="dot" [class.active]="$index === currentIndex" (click)="goToReference($index)">
+                }
+            </div>
+
+            <img src="assets/img/arrow_forward.png" alt="Next" class="nav-arrow nav-next" (click)="nextReference()">
+        </div>
+
+    </div>
+</section>

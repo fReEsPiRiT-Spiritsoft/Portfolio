@@ -1,0 +1,141 @@
+.footer-section {
+    position: relative;
+    background: #151e30;
+    width: 100vw;
+    min-height: 291px;
+    border-top: 2px solid #70e61c;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer-green-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 1px;
+    background: #70e61c;
+    z-index: 2;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 32px 0 32px;
+    box-sizing: border-box;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.footer-logo {
+    font-size: 2.9rem;
+    font-weight: 1000;
+    color: #fff;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.footer-bold {
+    font-weight: 900;
+    color: #fff;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    left: 100px;
+    position: relative;
+}
+
+.logo-i {
+    color: #a259ff;
+    font-weight: bold;
+}
+
+.logo-k {
+    color: #70E61C;
+    font-weight: bold;
+}
+
+.footer-legal {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    margin-top: -8px;
+    transition: color 0.2s;
+    cursor: pointer;
+
+    &:hover {
+        color: #70e61c;
+        text-decoration: underline;
+    }
+}
+
+.footer-center {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        filter: none;
+        transition: filter 0.2s, transform 0.2s;
+        cursor: pointer;
+
+        &:hover {
+            filter: drop-shadow(0 0 8px #70e61c);
+            transform: scale(1.08);
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 24px;
+        padding: 32px 16px 0 16px;
+    }
+
+    .footer-center {
+        margin: 12px 0;
+    }
+
+    .footer-right {
+        gap: 20px;
+    }
+
+    .footer-logo {
+        font-size: 2rem;
+    }
+
+    .footer-logo-k {
+        font-size: 2rem;
+    }
+}

@@ -31,8 +31,8 @@ export class Portfolio {
       description: 'A website that simulates Windows, featuring a file system, Wi-Fi, settings, browser, editor, code editor, terminal, games, and more.',
       image: 'assets/img/windows-laptop.png',
       tech: ['JavaScript', 'CSS', 'HTML'],
-      liveUrl: 'https://patrick-schmidt.developerakademie.net/pokedex/',
-      codeUrl: 'https://github.com/fReEsPiRiT-Spiritsoft/pokedex'
+      liveUrl: 'https://patrick-schmidt.info/windows',
+      codeUrl: 'https://github.com/fReEsPiRiT-Spiritsoft/Website-im-Windows-Style'
     },
     
   ];

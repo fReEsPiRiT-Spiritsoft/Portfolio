@@ -1,0 +1,210 @@
+:host {
+  display: block;
+  width: 100%;
+  color: #fff;
+}
+
+.references-section {
+  width: min(1920px, 90%);
+  margin: 0 auto;
+  padding: clamp(80px, 10vw, 160px) clamp(20px, 5vw, 40px);
+  position: relative;
+}
+
+.references-container {
+  position: relative;
+  min-height: 300px;
+}
+
+
+.quote-marker {
+  position: absolute;
+  top: -22px;
+  left: 277px;
+  width: clamp(40px, 6vw, 80px);
+  height: auto;
+  z-index: 2;
+   display: none;
+}
+
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(40px, 8vw, 80px);
+  padding-left: clamp(60px, 10vw, 120px);
+}
+
+.reference-slider {
+  flex: 1;
+  max-width: 700px;
+}
+
+.reference-card {
+  background: rgba(20, 29, 47, 0.9);
+  border: 2px solid #9747ff;
+  border-radius: 30px;
+  padding: clamp(35px, 5vw, 50px) clamp(40px, 6vw, 60px);
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -54px;
+    left: -17px;
+    width: clamp(40px, 6vw, 80px);
+    height: clamp(60px, 9vw, 120px);
+    background-image: url('./../../../../public/assets/img/marker.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+  }
+}
+
+.reference-content {
+  .reference-text {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: clamp(30px, 4vw, 45px);
+    font-weight: 400;
+    text-align: left;
+  }
+}
+
+.reference-author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  .author-line {
+    width: clamp(100px, 15vw, 180px);
+    height: auto;
+  }
+
+  .author-name {
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+    color: #fff;
+    font-weight: 400;
+  }
+}
+
+
+.profile-image {
+  width: clamp(100px, 18vw, 360px);
+  height: clamp(100px, 18vw, 360px);
+  border-radius: 50%;
+  border: 3px solid #70e61c;
+  overflow: hidden;
+  flex-shrink: 0;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.wrap-green-line{
+    display: flex;
+    align-items: center;
+}
+.green-line{
+    width: 100px;
+    height: 5px;
+}
+
+
+.slider-navigation {
+  position: absolute;
+  bottom: clamp(-50px, -6vw, -30px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: clamp(25px, 4vw, 35px);
+}
+
+.nav-arrow {
+  width: clamp(20px, 2.5vw, 28px);
+  height: auto;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.nav-dots {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  .dot {
+    width: clamp(6px, 1.2vw, 8px);
+    height: auto;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    &.active {
+      opacity: 1;
+      transform: scale(1.3);
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+
+@media (max-width: 900px) {
+  .references-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .quote-marker {
+    align-self: flex-start;
+    margin-bottom: 15px;
+  }
+
+  .reference-card {
+    order: 2;
+  }
+
+  .profile-image {
+    order: 1;
+    align-self: center;
+  }
+
+  .slider-navigation {
+    position: static;
+    transform: none;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .reference-author {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .slider-navigation {
+    gap: 20px;
+  }
+
+  .nav-dots {
+    gap: 8px;
+  }
+}

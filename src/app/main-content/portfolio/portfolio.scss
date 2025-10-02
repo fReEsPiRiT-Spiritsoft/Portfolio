@@ -10,7 +10,6 @@
 .portfolio-section {
     width: min(1920px, 88%);
     margin: 0 auto;
-    /* Nur oben und unten weniger Padding */
     padding: clamp(0px, 0vw, 0px) clamp(0px, 0vw, 0px);
     color: #fff;
     position: relative;
@@ -60,18 +59,28 @@
 .portfolio-bg-img {
     position: absolute;
     top: 300px;
-    left: -350px; 
+    left: -350px;
     z-index: 0;
     pointer-events: none;
     width: 428.59px;
     height: 951.44px;
-    opacity: 0.6; 
+    opacity: 0.6;
 }
 
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shadow {
+    position: absolute;
+    left: 66%;
+    bottom: 45%;
+}
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: clamp(28px, 4vw, 48px);
 }
 
@@ -89,7 +98,7 @@
     border: 1px solid rgb(112, 230, 28);
     display: flex;
     place-items: center;
-    max-width: 603px;
+    // max-width: 603px;
     max-height: 603px;
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -145,7 +154,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 80px;
-     
+
 
     .btn {
         padding: 12px 24px;
@@ -154,7 +163,7 @@
         font-weight: 600;
         text-decoration: none;
         transition: all 0.3s ease;
-       
+
     }
 
     .btn-outline {
@@ -246,7 +255,7 @@
     .btn-primary {
         background: #9747ff;
         color: #0c121f;
-        
+
 
         &:hover {
             background: #8df94b;

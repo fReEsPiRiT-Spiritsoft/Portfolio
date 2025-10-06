@@ -12,6 +12,7 @@ export class Contact {
   name = '';
   email = '';
   message = '';
+  privacyChecked = false;
 
   // Drei Zustände: null = unberührt, true = gültig, false = ungültig
   nameValid: boolean | null = null;
@@ -36,7 +37,7 @@ export class Contact {
     this.validateEmail();
     this.validateMessage();
 
-    if (this.nameValid && this.emailValid && this.messageValid) {
+    if (this.nameValid && this.emailValid && this.messageValid && this.privacyChecked) {
       alert('Message sent successfully!');
       // Form zurücksetzen
       this.name = '';
@@ -45,6 +46,7 @@ export class Contact {
       this.nameValid = null;
       this.emailValid = null;
       this.messageValid = null;
+      this.privacyChecked = false;
     }
     // Bei ungültigen Feldern passiert nichts - Fehler werden angezeigt
   }

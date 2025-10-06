@@ -61,14 +61,17 @@
                 }
 
                 <div class="contact-privacy">
-                    <input type="checkbox" id="privacy" required>
+                    <input type="checkbox" id="privacy" [(ngModel)]="privacyChecked" required name="privacy">
                     <label for="privacy">
                         I've read the <a href="#" class="privacy-link">privacy policy</a> and agree to the processing of
                         my data as outlined.
                     </label>
                 </div>
                 <div class="center">
-                    <button type="submit" class="contact-submit">Send message :)</button>
+                    <button type="submit" class="contact-submit"
+                        [disabled]="!(nameValid && emailValid && messageValid && privacyChecked)">
+                        Send message :)
+                    </button>
                 </div>
             </form>
         </div>

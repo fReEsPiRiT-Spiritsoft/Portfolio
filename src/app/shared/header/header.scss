@@ -52,7 +52,7 @@
     transition: color 0.2s;
 
     &:hover {
-        color: #a259ff;
+        color: rgb(106, 218, 29);
     }
 }
 
@@ -76,9 +76,9 @@
 
     &.active,
     &:hover {
-        background: #70E61C;
+        background: rgb(151, 71, 255);
         color: #222;
-        border: 1.5px solid #70E61C;
+        border: 1.5px solid rgb(151, 71, 255);
     }
 }
 

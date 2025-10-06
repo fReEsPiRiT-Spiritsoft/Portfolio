@@ -77,13 +77,14 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
+
   .line-helper h2 {
-  font-size: clamp(1.3rem, 2.5vw, 2.2rem);
-  font-weight: 700;
-  color: #fff;
-  margin: 0;
-  white-space: nowrap; // Immer eine Zeile!
-}
+    font-size: clamp(1.3rem, 2.5vw, 2.2rem);
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    white-space: nowrap; // Immer eine Zeile!
+  }
 
   h2 {
     font-size: clamp(1.3rem, 2.5vw, 2.2rem);
@@ -94,14 +95,14 @@
     margin-left: 0;
   }
 
- .contact-blue-line {
-  width: 120px; // Länge wie im Mockup
-  height: 6px;
-  object-fit: contain;
-  margin-right: 18px;
-  margin-left: -40px; // Linie ragt links raus!
-  flex-shrink: 0;
-}
+  .contact-blue-line {
+    width: 120px; // Länge wie im Mockup
+    height: 6px;
+    object-fit: contain;
+    margin-right: 18px;
+    margin-left: -40px; // Linie ragt links raus!
+    flex-shrink: 0;
+  }
 
   p {
     font-size: clamp(1rem, 2vw, 1.15rem);
@@ -186,20 +187,28 @@
     font-weight: 500;
     cursor: pointer;
     transition: background 0.2s;
-    box-shadow: 0 2px 8px rgba(20,29,47,0.12);
+    box-shadow: 0 2px 8px rgba(20, 29, 47, 0.12);
 
-    &:hover {
+    &:hover:enabled {
       background: #70e61c;
       color: #151e30;
+    }
+
+    &:disabled {
+      background: #bdbdbd;
+      color: #fff;
+      cursor: not-allowed;
+      opacity: 1;
     }
   }
 }
 
 .input-group {
+
   input,
   textarea {
     border: 2px solid rgb(151, 71, 255); // Lila als Standard
-    
+
     &:focus {
       border-color: rgb(151, 71, 255);
     }
@@ -280,18 +289,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    filter: drop-shadow(0 0 12px #9747ff);
-  }
 }
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contact-arrow img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 12px #9747ff);
+  transition: background-image 0.2s;
+}
+
+.contact-arrow:hover img {
+  content: url('../../../../public/assets/img/arrow-up-hover.png');
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // Responsive Anpassungen
@@ -301,10 +315,12 @@
     gap: 32px;
     align-items: stretch;
   }
+
   .contact-info,
   .contact-form {
     max-width: 100%;
   }
+
   .contact-arrow {
     right: 16px;
     bottom: 16px;
@@ -317,14 +333,17 @@
   .contact-header {
     flex-direction: column;
     gap: 12px;
+
     .contact-green-line {
       margin-left: 0;
       width: 100%;
     }
   }
+
   .contact-container {
     padding: 32px 0 24px 0;
   }
+
   .contact-bg-shadow {
     width: 100vw;
     height: 300px;

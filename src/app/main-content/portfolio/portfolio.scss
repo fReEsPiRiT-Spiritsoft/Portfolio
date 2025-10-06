@@ -169,10 +169,10 @@
     .btn-outline {
         background: rgba(20, 29, 47, 0.9);
         color: #fff;
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        border: 1px solid rgb(28, 218, 230);
 
         &:hover {
-            background: rgba(20, 29, 47, 1);
+            background: rgb(28, 218, 230);
             border-color: #fff;
         }
     }
@@ -263,13 +263,13 @@
     }
 
     .btn-outline {
-        border: 1px solid rgba(151, 71, 255, 0.5);
+        border: 1px solid rgb(28, 218, 230);
         color: #fff;
         background: rgba(0, 0, 0, 0.3);
 
         &:hover {
-            border-color: #9747ff;
-            color: #9747ff;
+            border-color: rgb(28, 218, 230);
+            color: white;
         }
     }
 }

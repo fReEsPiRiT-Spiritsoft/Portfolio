@@ -2,24 +2,23 @@
     <div class="contact-bg-shadow"></div>
     <div class="contact-container">
         <div class="contact-header">
-            <h1>Contact</h1>
+            <h1>{{ 'CONTACT.TITLE' | translate }}</h1>
             <img src="assets/img/contact-green-line.png" alt="" class="contact-green-line">
         </div>
         <div class="contact-content">
             <div class="contact-info">
                 <div class="line-helper">
                     <img src="assets/img/contact-blue-line.png" alt="" class="contact-blue-line">
-                    <h2>Got a problem to solve?</h2>
+                    <h2>{{ 'CONTACT.SUBTITLE' | translate }}</h2>
                 </div>
                 <p>
-                    Encourage people to contact you and describe what role you are interested in. Show that you will add
-                    value to their projects through your work.<br><br>
-                    Need a Frontend developer? <span class="contact-highlight">Contact me!</span>
+                    {{ 'CONTACT.DESCRIPTION' | translate }}<br><br>
+                    {{ 'CONTACT.CTA' | translate }}
                 </p>
             </div>
             <form class="contact-form" (ngSubmit)="onSubmit()" #form="ngForm">
                 <div class="input-group" [class.error]="nameValid === false" [class.success]="nameValid === true">
-                    <input type="text" placeholder="Your name" [(ngModel)]="name" name="name" required
+                    <input type="text" [placeholder]="'CONTACT.NAME' | translate" [(ngModel)]="name" name="name" required
                         (ngModelChange)="validateName()" [disabled]="isSending" />
                     @if (nameValid === false) {
                     <img src="assets/img/required.png" alt="Required" class="input-icon error-icon">
@@ -29,11 +28,11 @@
                     }
                 </div>
                 @if (nameValid === false) {
-                <div class="error-message">Your name is required</div>
+                <div class="error-message">{{ 'CONTACT.ERROR_NAME' | translate }}</div>
                 }
 
                 <div class="input-group" [class.error]="emailValid === false" [class.success]="emailValid === true">
-                    <input type="email" placeholder="Your email" [(ngModel)]="email" name="email" required
+                    <input type="email" [placeholder]="'CONTACT.EMAIL' | translate" [(ngModel)]="email" name="email" required
                         (ngModelChange)="validateEmail()" [disabled]="isSending" />
                     @if (emailValid === false) {
                     <img src="assets/img/required.png" alt="Required" class="input-icon error-icon">
@@ -43,11 +42,11 @@
                     }
                 </div>
                 @if (emailValid === false) {
-                <div class="error-message">Your email is required</div>
+                <div class="error-message">{{ 'CONTACT.ERROR_EMAIL' | translate }}</div>
                 }
 
                 <div class="input-group" [class.error]="messageValid === false" [class.success]="messageValid === true">
-                    <textarea placeholder="Your message" [(ngModel)]="message" name="message" required
+                    <textarea [placeholder]="'CONTACT.MESSAGE' | translate" [(ngModel)]="message" name="message" required
                         (ngModelChange)="validateMessage()" [disabled]="isSending"></textarea>
                     @if (messageValid === false) {
                     <img src="assets/img/required.png" alt="Required" class="input-icon error-icon">
@@ -57,26 +56,27 @@
                     }
                 </div>
                 @if (messageValid === false) {
-                <div class="error-message">Your message is empty</div>
+                <div class="error-message">{{ 'CONTACT.ERROR_MESSAGE' | translate }}</div>
                 }
 
                 <div class="contact-privacy">
                     <input type="checkbox" id="privacy" [(ngModel)]="privacyChecked" required name="privacy" [disabled]="isSending">
                     <label for="privacy">
-                        I've read the <a href="#" class="privacy-link">privacy policy</a> and agree to the processing of
-                        my data as outlined.
+                        {{ 'CONTACT.PRIVACY' | translate }}
+                        <a routerLink="/privacy" class="privacy-link">{{ 'CONTACT.PRIVACY_LINK' | translate }}</a>
+                        {{ 'CONTACT.PRIVACY_AGREE' | translate }}
                     </label>
                 </div>
 
                 @if (sendSuccess) {
                 <div class="success-notification">
-                    ✓ Message sent successfully! I'll get back to you soon.
+                    {{ 'CONTACT.SUCCESS' | translate }}
                 </div>
                 }
 
                 @if (sendError) {
                 <div class="error-notification">
-                    ✗ Failed to send message. Please try again or email me directly.
+                    {{ 'CONTACT.ERROR' | translate }}
                 </div>
                 }
 
@@ -84,9 +84,9 @@
                     <button type="submit" class="contact-submit"
                         [disabled]="!(nameValid && emailValid && messageValid && privacyChecked) || isSending">
                         @if (isSending) {
-                        <span>Sending...</span>
+                        <span>{{ 'CONTACT.SENDING' | translate }}</span>
                         } @else {
-                        <span>Send message :)</span>
+                        <span>{{ 'CONTACT.BUTTON' | translate }}</span>
                         }
                     </button>
                 </div>

@@ -3,31 +3,31 @@
         <div class="line-help">
             <div class="space-between">
                 <div class="purple-line"></div>
-                <h2>Portfolio</h2>
+                <h2>{{ 'PORTFOLIO.TITLE' | translate }}</h2>
                 <img class="shadow" src="assets/img/blue-shadow.png" alt="">
             </div>
         </div>
-        <p>Explore a selection of my work here – interact with projects to see my skills in action.</p>
+        <p>{{ 'PORTFOLIO.DESCRIPTION' | translate }}</p>
     </header>
 
     <div class="portfolio-grid">
-        @for (project of projects; track project.title) {
+        @for (project of projects; track project.titleKey) {
         <article class="portfolio-card">
             <div class="card-frame" (click)="onCardClick(project)">
-                <img [src]="project.image" [alt]="project.title" loading="lazy" />
+                <img [src]="project.image" [alt]="project.titleKey | translate" loading="lazy" />
 
                 <!-- Modal Content - nur auf Desktop -->
                 <div class="modal-overlay" [class.mobile-hidden]="isMobile()">
                     <!-- Buttons oben im Bild -->
                     <div class="card-actions">
                         <a class="btn btn-outline" [href]="project.codeUrl" target="_blank">Github</a>
-                        <a class="btn btn-primary" [href]="project.liveUrl" target="_blank">Live test</a>
+                        <a class="btn btn-primary" [href]="project.liveUrl" target="_blank">{{ 'PORTFOLIO.LIVE' | translate }}</a>
                     </div>
 
                     <!-- Beschreibung unten im weißen Container -->
                     <div class="card-body">
-                        <h3>{{ project.title }}</h3>
-                        <p>{{ project.description }}</p>
+                        <h3>{{ project.titleKey | translate }}</h3>
+                        <p>{{ project.descKey | translate }}</p>
                         <ul class="tech-list">
                             @for (tech of project.tech; track tech) {
                             <li>{{ tech }}</li>

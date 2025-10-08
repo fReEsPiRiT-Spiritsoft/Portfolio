@@ -1,0 +1,118 @@
+{
+  "HEADER": {
+    "ABOUT": "Über mich",
+    "SKILLS": "Skills",
+    "PORTFOLIO": "Portfolio"
+  },
+  "ATF": {
+    "CTA": "Lass uns reden!"
+  },
+  "ABOUT": {
+  "TITLE": "Über mich",
+  "INTRO": "Hallo, ich bin Patrick Schmidt und absolviere derzeit eine Weiterbildung bei der Developer Akademie zum Fullstack Developer.",
+  "PASSION": "Ich liebe es, moderne Webanwendungen zu entwickeln und erweitere kontinuierlich meine Fähigkeiten in Frontend- und Backend-Technologien.",
+  "GOAL": "Mein Ziel ist es, wirkungsvolle digitale Lösungen zu schaffen und mich als Entwickler in einem kollaborativen Umfeld weiterzuentwickeln.",
+  "CONNECT": "Lass uns vernetzen und gemeinsam etwas Großartiges erschaffen!",
+  "LOCATION": "Ansässig in Deutschland. Nordrhein Westfalen, Offen für Remote-Arbeit.",
+  "LEARNING": "Begeistert davon, neue Technologien zu lernen und meine Fähigkeiten stetig zu verbessern.",
+  "CHALLENGE": "Ich gehe Herausforderungen gerne an und strebe stets nach effizienten, eleganten Lösungen. Mein Ansatz ist analytisch, kreativ und teamorientiert."
+},
+"SKILLS": {
+  "TITLE": "Meine Skills",
+  "DESCRIPTION1": "Hebe deine Erfahrung hervor, verschiedene Projekte mit unterschiedlichen Frontend-Technologien (wie HTML, CSS, JavaScript usw.) umgesetzt zu haben und betone deine Offenheit für das Lernen und Anpassen an neue Technologien.",
+  "DESCRIPTION2": "Erwähne die Bedeutung von Weiterbildung, um mit den schnellen Veränderungen in der Webentwicklung Schritt zu halten.",
+  "HIGHLIGHT": "Du suchst nach einer anderen Fähigkeit?",
+  "LEARNING": "Zeige Begeisterung für das Lernen neuer Technologien und Frameworks.",
+  "BUTTON": "Kontakt aufnehmen"
+},
+"PORTFOLIO": {
+  "TITLE": "Portfolio",
+  "DESCRIPTION": "Hier findest du eine Auswahl meiner Arbeiten – interagiere mit den Projekten und entdecke meine Fähigkeiten.",
+  "LIVE": "Live testen",
+  "PROJECTS": {
+    "POLLO_TITLE": "El Pollo Loco",
+    "POLLO_DESC": "Ein Jump'n'Run-Spiel auf Basis von Vanilla JavaScript und objektorientierter Programmierung. Hilf Pepe durch die mexikanische Wüste, kämpfe gegen Hühner und gewinne das Spiel.",
+    "POKEDEX_TITLE": "Pokedex",
+    "POKEDEX_DESC": "Ein Pokédex basierend auf der PokéAPI mit verschiedenen Features. Wähle zwischen Karten- und Arenamodus, alle Pokémon haben eigene Sounds. Entdecke die Pokémon-Welt in meinem einzigartigen Pokédex.",
+    "WINDOWS_TITLE": "Windows Clone",
+    "WINDOWS_DESC": "Eine Website, die Windows simuliert – mit Dateisystem, WLAN, Einstellungen, Browser, Editor, Code-Editor, Terminal, Spielen und mehr."
+  }
+},
+"REFERENCES": {
+  "HEINZE": {
+    "TEXT": "Wer mit Patrick arbeitet, merkt sofort sein Interesse am Programmieren. Er testet, hinterfragt und bringt dadurch frischen Input in jedes Projekt.",
+    "AUTHOR": "S. Heinze",
+    "ROLE": "Team Partner"
+  },
+  "LUZIUS": {
+    "TEXT": "Mit Patrick zu arbeiten bedeutet, Logik in Aktion zu erleben. Sein außergewöhnliches Verständnis für Struktur und Zusammenhänge führt selbst bei komplexen Aufgaben zu klaren, durchdachten Lösungen.",
+    "AUTHOR": "D. Luzius",
+    "ROLE": "Team Partner"
+  },
+  "WEBER": {
+    "TEXT": "Großartiger Teamplayer, der innovative Lösungen für komplexe Herausforderungen liefert. Sehr empfehlenswert!",
+    "AUTHOR": "S. Weber",
+    "ROLE": "Lead Developer"
+  },
+  "FISCHER": {
+    "TEXT": "Professionell, zuverlässig und immer bereit, einen Schritt mehr zu gehen. Es ist eine Freude, mit ihm zu arbeiten.",
+    "AUTHOR": "M. Fischer",
+    "ROLE": "Kunde"
+  }
+},
+"CONTACT": {
+  "TITLE": "Kontakt",
+  "SUBTITLE": "Hast du ein Problem zu lösen?",
+  "DESCRIPTION": "Ermutige Menschen, dich zu kontaktieren und beschreibe, für welche Rolle du dich interessierst. Zeige, dass du durch deine Arbeit einen Mehrwert für ihre Projekte bringst.",
+  "CTA": "Du suchst einen Entwickler? Kontaktiere mich!",
+  "NAME": "Dein Name",
+  "EMAIL": "Deine E-Mail",
+  "MESSAGE": "Deine Nachricht",
+  "PRIVACY": "Ich habe die",
+  "PRIVACY_LINK": "Datenschutzerklärung",
+  "PRIVACY_AGREE": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+  "BUTTON": "Nachricht senden :)",
+  "SENDING": "Wird gesendet...",
+  "SUCCESS": "✓ Nachricht erfolgreich gesendet! Ich melde mich bald bei dir.",
+  "ERROR": "✗ Nachricht konnte nicht gesendet werden. Bitte versuche es erneut oder schreibe mir direkt.",
+  "ERROR_NAME": "Dein Name ist erforderlich",
+  "ERROR_EMAIL": "Deine E-Mail ist erforderlich",
+  "ERROR_MESSAGE": "Deine Nachricht ist leer"
+},
+"PRIVACY": {
+  "TITLE": "Datenschutzerklärung",
+  "INTRO_TITLE": "1. Einleitung",
+  "INTRO_TEXT": "Diese Datenschutzerklärung erklärt, wie wir deine personenbezogenen Daten erheben, verwenden und schützen, wenn du unser Kontaktformular nutzt.",
+  "RESPONSIBLE_TITLE": "2. Verantwortlicher",
+  "COLLECTION_TITLE": "3. Datenerhebung",
+  "COLLECTION_TEXT": "Wenn du unser Kontaktformular nutzt, erheben wir folgende Daten:",
+  "COLLECTION_NAME": "Name",
+  "COLLECTION_EMAIL": "E-Mail-Adresse",
+  "COLLECTION_MESSAGE": "Deine Nachricht",
+  "PURPOSE_TITLE": "4. Zweck der Datenverarbeitung",
+  "PURPOSE_TEXT": "Wir verwenden deine Daten ausschließlich, um auf deine Anfrage zu antworten. Die Daten werden nicht an Dritte weitergegeben, es sei denn, dies ist gesetzlich vorgeschrieben.",
+  "LEGAL_TITLE": "5. Rechtsgrundlage",
+  "LEGAL_TEXT": "Die Verarbeitung deiner Daten basiert auf deiner Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) beim Absenden des Kontaktformulars.",
+  "STORAGE_TITLE": "6. Datenspeicherung",
+  "STORAGE_TEXT": "Deine Daten werden gespeichert, bis deine Anfrage vollständig bearbeitet wurde und anschließend gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten bestehen.",
+  "FORMSPREE_TITLE": "7. Nutzung von Formspree",
+  "FORMSPREE_TEXT": "Wir nutzen Formspree zur Verarbeitung unseres Kontaktformulars. Formspree agiert als unser Auftragsverarbeiter und verarbeitet deine Daten gemäß deren Datenschutzerklärung. Mehr Informationen: https://formspree.io/legal/privacy-policy",
+  "RIGHTS_TITLE": "8. Deine Rechte",
+  "RIGHTS_TEXT": "Du hast folgende Rechte bezüglich deiner personenbezogenen Daten:",
+  "RIGHTS_ACCESS": "Recht auf Auskunft über deine gespeicherten Daten",
+  "RIGHTS_CORRECTION": "Recht auf Berichtigung falscher Daten",
+  "RIGHTS_DELETION": "Recht auf Löschung deiner Daten",
+  "RIGHTS_RESTRICTION": "Recht auf Einschränkung der Verarbeitung",
+  "RIGHTS_PORTABILITY": "Recht auf Datenübertragbarkeit",
+  "RIGHTS_OBJECTION": "Recht auf Widerspruch gegen die Verarbeitung",
+  "SECURITY_TITLE": "9. Datensicherheit",
+  "SECURITY_TEXT": "Wir setzen technische und organisatorische Sicherheitsmaßnahmen ein, um deine Daten vor unbefugtem Zugriff, Verlust oder Missbrauch zu schützen.",
+  "CHANGES_TITLE": "10. Änderungen dieser Datenschutzerklärung",
+  "CHANGES_TEXT": "Wir behalten uns vor, diese Datenschutzerklärung zu aktualisieren. Die aktuelle Version ist stets auf dieser Seite verfügbar.",
+  "CONTACT_TITLE": "11. Kontakt",
+  "CONTACT_TEXT": "Bei Fragen zum Datenschutz kontaktiere uns bitte unter: kontakt@patrick-schmidt.de"
+},
+"FOOTER": {
+  "LEGAL": "Impressum"
+}
+}

@@ -34,7 +34,7 @@ app-contact {
 
 .hero-background[_ngcontent-ng-c1459992026] {
     position: absolute;
-    top: clamp(460px, 200vw, 653px);
+    top: clamp(460px, 200vw, 685px);
     left: 50%;
     transform: translateX(-50%);
     width: 100vw;
@@ -54,3 +54,10 @@ app-contact {
     overflow: hidden;
 }
 
+@media (max-width: 340px){
+    .hero-background[_ngcontent-ng-c1459992026] {
+    position: absolute;
+    top: clamp(460px, 212vw, 685px);
+    left: 70%;
+}
+}

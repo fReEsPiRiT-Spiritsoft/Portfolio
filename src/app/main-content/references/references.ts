@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-references',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslatePipe],
   templateUrl: './references.html',
   styleUrl: './references.scss'
 })
@@ -13,28 +14,28 @@ export class References {
 
   references = [
     {
-      text: "Wer mit Patrick arbeitet, merkt sofort sein Interesse am Programmieren. Er testet, hinterfragt und bringt dadurch frischen Input in jedes Projekt.",
-      author: "S. Heinze",
-      role: "Team Partner",
-      image: "assets/img/s-heinze-min.png"
+      textKey: 'REFERENCES.HEINZE.TEXT',
+      authorKey: 'REFERENCES.HEINZE.AUTHOR',
+      roleKey: 'REFERENCES.HEINZE.ROLE',
+      image: 'assets/img/s-heinze-min.png'
     },
     {
-      text: "Mit Patrick zu arbeiten bedeutet, Logik in Aktion zu erleben. Sein außergewöhnliches Verständnis für Struktur und Zusammenhänge führt selbst bei komplexen Aufgaben zu klaren, durchdachten Lösungen.",
-      author: "D. Luzius",
-      role: "Team Partner",
-      image: "assets/img/daniel_img.jpg"
+      textKey: 'REFERENCES.LUZIUS.TEXT',
+      authorKey: 'REFERENCES.LUZIUS.AUTHOR',
+      roleKey: 'REFERENCES.LUZIUS.ROLE',
+      image: 'assets/img/daniel_img.jpg'
     },
     {
-      text: "Great team player who brings innovative solutions to complex challenges. Highly recommended!",
-      author: "S. Weber",
-      role: "Lead Developer",
-      image: "assets/img/placeholder-male.jpg"
+      textKey: 'REFERENCES.WEBER.TEXT',
+      authorKey: 'REFERENCES.WEBER.AUTHOR',
+      roleKey: 'REFERENCES.WEBER.ROLE',
+      image: 'assets/img/placeholder-male.jpg'
     },
     {
-      text: "Professional, reliable, and always willing to go the extra mile. A pleasure to work with.",
-      author: "M. Fischer",
-      role: "Client",
-      image: "assets/img/placeholder-male.jpg"
+      textKey: 'REFERENCES.FISCHER.TEXT',
+      authorKey: 'REFERENCES.FISCHER.AUTHOR',
+      roleKey: 'REFERENCES.FISCHER.ROLE',
+      image: 'assets/img/placeholder-male.jpg'
     }
   ];
 
@@ -43,8 +44,8 @@ export class References {
   }
 
   previousReference() {
-    this.currentIndex = this.currentIndex === 0 
-      ? this.references.length - 1 
+    this.currentIndex = this.currentIndex === 0
+      ? this.references.length - 1
       : this.currentIndex - 1;
   }
 

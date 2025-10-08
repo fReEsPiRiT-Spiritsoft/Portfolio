@@ -1,36 +1,33 @@
 <section id="about-me" class="about-me">
     <section class="about-left">
-        <h2>About me</h2>
+        <h2>{{ 'ABOUT.TITLE' | translate }}</h2>
         <div class="about-details">
             <p>
-                Hi, I'm Patrick Schmidt, currently undergoing further training at Developer Akademie to become a Fullstack Developer.<br>
-                I am passionate about building modern web applications and continuously expanding my skills in both frontend and backend technologies.<br>
-                My goal is to create impactful digital solutions and grow as a developer in a collaborative environment.<br>
+                {{ 'ABOUT.INTRO' | translate }}<br>
+                {{ 'ABOUT.PASSION' | translate }}<br>
+                {{ 'ABOUT.GOAL' | translate }}<br>
                 <br>
-                Let's connect and create something amazing together!
+                {{ 'ABOUT.CONNECT' | translate }}
             </p>
             <ul>
                 <li>
                     <img src="assets/img/location.png" alt="Location Icon" class="about-icon">
-                    <span>Based in Germany. Open to remote work and relocation.</span>
+                    <span>{{ 'ABOUT.LOCATION' | translate }}</span>
                 </li>
                 <li>
                     <img src="assets/img/light.png" alt="Open Mind Icon" class="about-icon">
-                    <span>Enthusiastic about learning new technologies and continually improving my skills.</span>
+                    <span>{{ 'ABOUT.LEARNING' | translate }}</span>
                 </li>
                 <li>
                     <img src="assets/img/puzzle.png" alt="Problem Solving Icon" class="about-icon">
-                    <span>
-                        I enjoy tackling challenges and always strive for efficient, elegant solutions. My approach is analytical, creative, and collaborative.
-                    </span>
+                    <span>{{ 'ABOUT.CHALLENGE' | translate }}</span>
                 </li>
             </ul>
         </div>
     </section>
-        <section class="about-right">
+    <section class="about-right">
         <img src="assets/img/shadow1.png" alt="" class="about-shadow about-shadow-purple">
         <!-- <img src="assets/img/hero-background.png" class="hero-background" alt=""> -->
         <img src="assets/img/Profeesional-me-non-background.png" alt="Patrick Schmidt" class="about-image">
     </section>
-    
 </section>

@@ -6,7 +6,7 @@
   max-width: 1440px;
   margin: 0 auto;
   background: transparent;
-  padding-block: clamp(60px, 8vw, 120px);
+  // padding-block: clamp(60px, 8vw, 120px);
   z-index: 200;
   overflow: visible;
 }
@@ -51,7 +51,7 @@
 
 .skills-info {
   margin-left: clamp(20px, 5vw, 40px);
-  margin-top: clamp(40px, 6vw, 60px);
+  // margin-top: clamp(40px, 6vw, 60px);
   max-width: 500px;
   color: #fff;
   position: relative;
@@ -68,7 +68,7 @@
 .skills-line {
   display: inline-block;
   height: 4px;
-  width: 100%;
+  width: 41%;
   background: #00cfff;
   border-radius: 2px;
   margin-left: 18px;

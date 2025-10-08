@@ -1,0 +1,119 @@
+{
+  "HEADER": {
+    "ABOUT": "About me",
+    "SKILLS": "Skills",
+    "PORTFOLIO": "Portfolio"
+  },
+  "ATF": {
+    "CTA": "Let's talk!"
+  },
+  "ABOUT": {
+  "TITLE": "About me",
+  "INTRO": "Hi, I'm Patrick Schmidt, currently undergoing further training at Developer Akademie to become a Fullstack Developer.",
+  "PASSION": "I am passionate about building modern web applications and continuously expanding my skills in both frontend and backend technologies.",
+  "GOAL": "My goal is to create impactful digital solutions and grow as a developer in a collaborative environment.",
+  "CONNECT": "Let's connect and create something amazing together!",
+  "LOCATION": "Based in Germany. North Rhine-Westphalia",
+  "LEARNING": "Enthusiastic about learning new technologies and continually improving my skills.",
+  "CHALLENGE": "I enjoy tackling challenges and always strive for efficient, elegant solutions. My approach is analytical, creative, and collaborative."
+},
+"SKILLS": {
+  "TITLE": "My skills",
+  "DESCRIPTION1": "Highlight your experience of working on different projects using different front-end technologies (such as HTML, CSS, JavaScript, etc.) and emphasise your openness to learning and adapting to new technologies.",
+  "DESCRIPTION2": "Mention the importance of continuing education to keep up with the rapid changes in web development.",
+  "HIGHLIGHT": "Looking for another skill?",
+  "LEARNING": "Reveal enthusiasm for learning new technologies and frameworks.",
+  "BUTTON": "Get in touch"
+},
+"PORTFOLIO": {
+  "TITLE": "Portfolio",
+  "DESCRIPTION": "Explore a selection of my work here – interact with projects to see my skills in action.",
+  "LIVE": "Live test",
+  "PROJECTS": {
+    "POLLO_TITLE": "El Pollo Loco",
+    "POLLO_DESC": "A jump, run, and throw game, based on vanilla JavaScript with object-oriented programming. Help Pepe through the Mexican desert, fight against chickens, and win the game.",
+    "POKEDEX_TITLE": "Pokedex",
+    "POKEDEX_DESC": "A Pokédex based on the PokéAPI with various features. Choose between card view and arena view, all Pokémon come with their own sounds. Discover the world of Pokémon in my unique Pokédex.",
+    "WINDOWS_TITLE": "Windows Clone",
+    "WINDOWS_DESC": "A website that simulates Windows, featuring a file system, Wi-Fi, settings, browser, editor, code editor, terminal, games, and more."
+  }
+},
+"REFERENCES": {
+  "HEINZE": {
+    "TEXT": "Whoever works with Patrick immediately notices his interest in programming. He tests, questions, and thus brings fresh input to every project.",
+    "AUTHOR": "S. Heinze",
+    "ROLE": "Team Partner"
+  },
+  "LUZIUS": {
+    "TEXT": "Working with Patrick means experiencing logic in action. His exceptional understanding of structure and connections leads to clear, well-thought-out solutions even for complex tasks.",
+    "AUTHOR": "D. Luzius",
+    "ROLE": "Team Partner"
+  },
+  "WEBER": {
+    "TEXT": "Great team player who brings innovative solutions to complex challenges. Highly recommended!",
+    "AUTHOR": "S. Weber",
+    "ROLE": "Lead Developer"
+  },
+  "FISCHER": {
+    "TEXT": "Professional, reliable, and always willing to go the extra mile. A pleasure to work with.",
+    "AUTHOR": "M. Fischer",
+    "ROLE": "Client"
+  }
+},
+"CONTACT": {
+  "TITLE": "Contact",
+  "SUBTITLE": "Got a problem to solve?",
+  "DESCRIPTION": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.",
+  "CTA": "Need a developer? Contact me!",
+  "NAME": "Your name",
+  "EMAIL": "Your email",
+  "MESSAGE": "Your message",
+  "PRIVACY": "I've read the",
+  "PRIVACY_LINK": "privacy policy",
+  "PRIVACY_AGREE": "and agree to the processing of my data as outlined.",
+  "BUTTON": "Send message :)",
+  "SENDING": "Sending...",
+  "SUCCESS": "✓ Message sent successfully! I'll get back to you soon.",
+  "ERROR": "✗ Failed to send message. Please try again or email me directly.",
+  "ERROR_NAME": "Your name is required",
+  "ERROR_EMAIL": "Your email is required",
+  "ERROR_MESSAGE": "Your message is empty"
+},
+"PRIVACY": {
+  "TITLE": "Privacy Policy",
+  "INTRO_TITLE": "1. Introduction",
+  "INTRO_TEXT": "This privacy policy explains how we collect, use, and protect your personal data when you use our contact form.",
+  "RESPONSIBLE_TITLE": "2. Responsible Party",
+  "COLLECTION_TITLE": "3. Data Collection",
+  "COLLECTION_TEXT": "When you use our contact form, we collect the following data:",
+  "COLLECTION_NAME": "Name",
+  "COLLECTION_EMAIL": "Email address",
+  "COLLECTION_MESSAGE": "Your message",
+  "PURPOSE_TITLE": "4. Purpose of Data Processing",
+  "PURPOSE_TEXT": "We use your data exclusively to respond to your inquiry. The data will not be shared with third parties unless required by law.",
+  "LEGAL_TITLE": "5. Legal Basis",
+  "LEGAL_TEXT": "The processing of your data is based on your consent (Art. 6(1)(a) GDPR) when submitting the contact form.",
+  "STORAGE_TITLE": "6. Data Storage",
+  "STORAGE_TEXT": "Your data will be stored until your inquiry has been fully processed and subsequently deleted, unless there are legal retention obligations.",
+  "FORMSPREE_TITLE": "7. Use of Formspree",
+  "FORMSPREE_TEXT": "We use Formspree to process our contact form. Formspree acts as our processor and processes your data according to their privacy policy. More information: https://formspree.io/legal/privacy-policy",
+  "RIGHTS_TITLE": "8. Your Rights",
+  "RIGHTS_TEXT": "You have the following rights regarding your personal data:",
+  "RIGHTS_ACCESS": "Right to information about your stored data",
+  "RIGHTS_CORRECTION": "Right to correction of incorrect data",
+  "RIGHTS_DELETION": "Right to deletion of your data",
+  "RIGHTS_RESTRICTION": "Right to restriction of processing",
+  "RIGHTS_PORTABILITY": "Right to data portability",
+  "RIGHTS_OBJECTION": "Right to object to processing",
+  "SECURITY_TITLE": "9. Data Security",
+  "SECURITY_TEXT": "We use technical and organizational security measures to protect your data from unauthorized access, loss, or misuse.",
+  "CHANGES_TITLE": "10. Changes to this Privacy Policy",
+  "CHANGES_TEXT": "We reserve the right to update this privacy policy. The current version is always available on this page.",
+  "CONTACT_TITLE": "11. Contact",
+  "CONTACT_TEXT": "If you have questions about data protection, please contact us at: kontakt@patrick-schmidt.de"
+},
+"FOOTER": {
+  "LEGAL": "Legal Notice"
+}
+
+}

@@ -1,10 +1,10 @@
 :host {
     display: block;
     width: 100%;
-    overflow-x: hidden; // Verhindert horizontalen Overflow
+    overflow-x: hidden; 
 }
 
-// Stelle sicher, dass alle Sektionen die volle Breite nutzen
+
 app-main,
 app-about-me,
 app-skills,
@@ -13,22 +13,21 @@ app-references,
 app-contact {
     width: 100%;
     display: block;
-    overflow-x: hidden; // Verhindert horizontalen Overflow in Sektionen
+    overflow-x: hidden; 
     overflow-y: hidden;
 
-    // Responsive Behandlung für sehr kleine Bildschirme
+    
     @media (max-width: 480px) {
-        min-width: 0; // Erlaubt Flexibilität bei sehr kleinen Bildschirmen
+        min-width: 0; 
     }
 
     @media (max-width: 360px) {
-        // Zusätzliche Anpassungen für sehr kleine Bildschirme
-        font-size: 14px; // Kleinere Schriftgröße falls nötig
+        
+        font-size: 14px; 
     }
 
     @media (max-width: 320px) {
-        // Anpassungen für die kleinste unterstützte Bildschirmgröße
-        font-size: 13px; // Noch kleinere Schriftgröße falls nötig
+        font-size: 13px; 
     }
 }
 
@@ -40,8 +39,8 @@ app-contact {
     transform: translateX(-50%);
     width: 100vw;
     max-width: 1920px;
-    height: 100%; // z.B. oder 30vh
-    background: url('./../../../public/assets/img/hero-background2.png') no-repeat center top;
+    height: 100%; 
+    background: url('./../../../public/assets/img/hero-background3.png') no-repeat center top;
     background-size: contain;
     z-index: 2;
     pointer-events: none;
@@ -53,6 +52,5 @@ app-contact {
     max-width: 1920px;
     margin: 0 auto;
     overflow: hidden;
-    // bottom: 373px;
 }
 

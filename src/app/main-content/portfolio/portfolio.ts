@@ -36,4 +36,15 @@ export class Portfolio {
     },
     
   ];
+
+  isMobile(): boolean {
+    return window.innerWidth < 600;
+  }
+
+  onCardClick(project: any): void {
+    if (this.isMobile()) {
+      window.open(project.liveUrl, '_blank');
+    }
+  }
 }
+  

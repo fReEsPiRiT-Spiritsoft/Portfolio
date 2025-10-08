@@ -13,11 +13,11 @@
     <div class="portfolio-grid">
         @for (project of projects; track project.title) {
         <article class="portfolio-card">
-            <div class="card-frame">
+            <div class="card-frame" (click)="onCardClick(project)">
                 <img [src]="project.image" [alt]="project.title" loading="lazy" />
 
-                <!-- Modal Content - erscheint beim Hover -->
-                <div class="modal-overlay">
+                <!-- Modal Content - nur auf Desktop -->
+                <div class="modal-overlay" [class.mobile-hidden]="isMobile()">
                     <!-- Buttons oben im Bild -->
                     <div class="card-actions">
                         <a class="btn btn-outline" [href]="project.codeUrl" target="_blank">Github</a>

@@ -20,7 +20,7 @@
             <form class="contact-form" (ngSubmit)="onSubmit()" #form="ngForm">
                 <div class="input-group" [class.error]="nameValid === false" [class.success]="nameValid === true">
                     <input type="text" placeholder="Your name" [(ngModel)]="name" name="name" required
-                        (ngModelChange)="validateName()" />
+                        (ngModelChange)="validateName()" [disabled]="isSending" />
                     @if (nameValid === false) {
                     <img src="assets/img/required.png" alt="Required" class="input-icon error-icon">
                     }
@@ -34,7 +34,7 @@
 
                 <div class="input-group" [class.error]="emailValid === false" [class.success]="emailValid === true">
                     <input type="email" placeholder="Your email" [(ngModel)]="email" name="email" required
-                        (ngModelChange)="validateEmail()" />
+                        (ngModelChange)="validateEmail()" [disabled]="isSending" />
                     @if (emailValid === false) {
                     <img src="assets/img/required.png" alt="Required" class="input-icon error-icon">
                     }
@@ -48,7 +48,7 @@
 
                 <div class="input-group" [class.error]="messageValid === false" [class.success]="messageValid === true">
                     <textarea placeholder="Your message" [(ngModel)]="message" name="message" required
-                        (ngModelChange)="validateMessage()"></textarea>
+                        (ngModelChange)="validateMessage()" [disabled]="isSending"></textarea>
                     @if (messageValid === false) {
                     <img src="assets/img/required.png" alt="Required" class="input-icon error-icon">
                     }
@@ -61,16 +61,33 @@
                 }
 
                 <div class="contact-privacy">
-                    <input type="checkbox" id="privacy" [(ngModel)]="privacyChecked" required name="privacy">
+                    <input type="checkbox" id="privacy" [(ngModel)]="privacyChecked" required name="privacy" [disabled]="isSending">
                     <label for="privacy">
                         I've read the <a href="#" class="privacy-link">privacy policy</a> and agree to the processing of
                         my data as outlined.
                     </label>
                 </div>
+
+                @if (sendSuccess) {
+                <div class="success-notification">
+                    ✓ Message sent successfully! I'll get back to you soon.
+                </div>
+                }
+
+                @if (sendError) {
+                <div class="error-notification">
+                    ✗ Failed to send message. Please try again or email me directly.
+                </div>
+                }
+
                 <div class="center">
                     <button type="submit" class="contact-submit"
-                        [disabled]="!(nameValid && emailValid && messageValid && privacyChecked)">
-                        Send message :)
+                        [disabled]="!(nameValid && emailValid && messageValid && privacyChecked) || isSending">
+                        @if (isSending) {
+                        <span>Sending...</span>
+                        } @else {
+                        <span>Send message :)</span>
+                        }
                     </button>
                 </div>
             </form>

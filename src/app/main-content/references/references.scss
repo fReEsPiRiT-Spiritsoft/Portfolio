@@ -16,7 +16,6 @@
   min-height: 300px;
 }
 
-
 .quote-marker {
   position: absolute;
   top: -22px;
@@ -24,9 +23,8 @@
   width: clamp(40px, 6vw, 80px);
   height: auto;
   z-index: 2;
-   display: none;
+  display: none;
 }
-
 
 .content-wrapper {
   display: flex;
@@ -47,6 +45,7 @@
   border-radius: 30px;
   padding: clamp(35px, 5vw, 50px) clamp(40px, 6vw, 60px);
   position: relative;
+  
   &::before {
     content: '';
     position: absolute;
@@ -90,7 +89,6 @@
   }
 }
 
-
 .profile-image {
   width: clamp(100px, 18vw, 360px);
   height: clamp(100px, 18vw, 360px);
@@ -105,15 +103,16 @@
     object-fit: cover;
   }
 }
-.wrap-green-line{
-    display: flex;
-    align-items: center;
-}
-.green-line{
-    width: 100px;
-    height: 5px;
+
+.wrap-green-line {
+  display: flex;
+  align-items: center;
 }
 
+.green-line {
+  width: 100px;
+  height: 5px;
+}
 
 .slider-navigation {
   position: absolute;
@@ -164,47 +163,127 @@
   }
 }
 
+/* ...existing code... */
 
-@media (max-width: 900px) {
-  .references-container {
+/* ...existing code... */
+
+/* Responsive Breakpoints - NUR Layout-Änderungen */
+@media (max-width: 1200px) {
+  .content-wrapper {
     flex-direction: column;
-    text-align: center;
+    padding-left: 0;
     gap: 30px;
   }
 
-  .quote-marker {
-    align-self: flex-start;
-    margin-bottom: 15px;
-  }
-
-  .reference-card {
-    order: 2;
+  .wrap-green-line {
+    order: -1; // Bild nach oben
   }
 
   .profile-image {
-    order: 1;
-    align-self: center;
+    width: clamp(120px, 20vw, 180px);
+    height: clamp(120px, 20vw, 180px);
+  }
+
+  .green-line {
+    display: none; // Nur die grüne Linie verstecken, nicht das Bild
+  }
+
+  .reference-slider {
+    order: 2;
+    max-width: 100%;
   }
 
   .slider-navigation {
     position: static;
     transform: none;
-    margin-top: 25px;
+    margin-top: 30px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .profile-image {
+    width: 140px;
+    height: 140px;
   }
 }
 
 @media (max-width: 600px) {
+  .references-section {
+    padding: 60px 16px;
+  }
+
+  .content-wrapper {
+    gap: 20px;
+  }
+
+  .reference-card {
+    padding: 25px 30px;
+    
+    &::before {
+      top: -21px;
+      left: -3px;
+      width: 35px;
+      height: 50px;
+    }
+  }
+
+  .reference-content .reference-text {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
   .reference-author {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
+    
+    .author-line {
+      width: 80px;
+    }
+    
+    .author-name {
+      font-size: 0.85rem;
+      text-align: center;
+    }
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
   }
 
   .slider-navigation {
     gap: 20px;
+    margin-top: 25px;
   }
 
   .nav-dots {
     gap: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .references-section {
+    padding: 40px 12px;
+  }
+
+  .reference-card {
+    padding: 20px 25px;
+    
+    &::before {
+      width: 30px;
+      height: 45px;
+    }
+  }
+
+  .reference-content .reference-text {
+    font-size: 0.9rem;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
   }
 }

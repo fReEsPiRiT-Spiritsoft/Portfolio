@@ -14,7 +14,7 @@
   height: 1100px;
   background: url('./../../../../public/assets/img/shadow-portfolio.png') no-repeat right top;
   background-size: cover;
-  transform: scaleX(-1); // Horizontal gespiegelt
+  transform: scaleX(-1);
   opacity: 1;
   z-index: 1;
   pointer-events: none;
@@ -25,21 +25,21 @@
   z-index: 2;
   width: min(1200px, 95vw);
   margin: 0 auto;
-  padding: clamp(60px, 8vw, 120px) 0 clamp(40px, 6vw, 80px) 0;
+  // padding: clamp(60px, 8vw, 120px) clamp(16px, 3vw, 0) clamp(80px, 10vw, 120px) clamp(16px, 3vw, 0);
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: clamp(32px, 5vw, 40px);
 }
 
 .contact-header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 32px;
-  margin-bottom: 24px;
+  gap: clamp(16px, 4vw, 32px);
+  margin-bottom: clamp(16px, 3vw, 24px);
 
   h1 {
-    font-size: clamp(2.8rem, 7vw, 5rem);
+    font-size: clamp(2.5rem, 8vw, 5rem);
     font-weight: 900;
     color: #fff;
     letter-spacing: 1px;
@@ -48,16 +48,16 @@
   }
 
   .contact-green-line {
-    height: 8px;
-    width: clamp(120px, 30vw, 360px);
+    height: clamp(4px, 1vw, 8px);
+    width: clamp(80px, 25vw, 360px);
     object-fit: contain;
-    margin-left: 24px;
+    margin-left: clamp(12px, 3vw, 24px);
   }
 }
 
 .contact-content {
   display: flex;
-  gap: 48px;
+  gap: clamp(32px, 6vw, 48px);
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -66,9 +66,9 @@
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: clamp(16px, 3vw, 24px);
   justify-content: flex-end;
-  left: 22px;
+  left: clamp(0px, 2vw, 22px);
 }
 
 .contact-info {
@@ -76,18 +76,18 @@
   max-width: 400px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: clamp(12px, 2vw, 18px);
 
   .line-helper h2 {
-    font-size: clamp(1.3rem, 2.5vw, 2.2rem);
+    font-size: clamp(1.1rem, 3vw, 2.2rem);
     font-weight: 700;
     color: #fff;
     margin: 0;
-    white-space: nowrap; // Immer eine Zeile!
+    white-space: nowrap;
   }
 
   h2 {
-    font-size: clamp(1.3rem, 2.5vw, 2.2rem);
+    font-size: clamp(1.2rem, 3vw, 2.2rem);
     font-weight: 700;
     color: #fff;
     margin-bottom: 0;
@@ -96,18 +96,18 @@
   }
 
   .contact-blue-line {
-    width: 120px; // Länge wie im Mockup
-    height: 6px;
+    width: clamp(60px, 12vw, 120px);
+    height: clamp(3px, 0.8vw, 6px);
     object-fit: contain;
-    margin-right: 18px;
-    margin-left: -40px; // Linie ragt links raus!
+    margin-right: clamp(10px, 2vw, 18px);
+    margin-left: clamp(-20px, -4vw, -40px);
     flex-shrink: 0;
   }
 
   p {
-    font-size: clamp(1rem, 2vw, 1.15rem);
+    font-size: clamp(0.9rem, 1.8vw, 1.15rem);
     color: #fff;
-    margin-top: 12px;
+    margin-top: clamp(8px, 1.5vw, 12px);
     line-height: 1.6;
   }
 
@@ -123,18 +123,19 @@
   max-width: 583px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: clamp(12px, 2vw, 18px);
   margin-top: 0;
+  padding-right: 10px;
 
   input,
   textarea {
     width: 100%;
     background: #151e30;
     border: 2px solid #9747ff;
-    border-radius: 8px;
+    border-radius: clamp(6px, 1vw, 8px);
     color: #fff;
-    font-size: 1rem;
-    padding: 12px 16px;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    padding: clamp(10px, 1.5vw, 12px) clamp(12px, 2vw, 16px);
     outline: none;
     transition: border-color 0.2s;
     font-family: inherit;
@@ -147,26 +148,28 @@
   }
 
   textarea {
-    width: clamp(320px, 50vw, 617px);
+    width: 100%;
     height: clamp(120px, 20vw, 202px);
     min-width: 0;
-    min-height: 0;
+    min-height: 100px;
     max-width: 100%;
-    max-height: 100%;
   }
 
   .contact-privacy {
     display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 0.8rem;
+    align-items: flex-start;
+    gap: clamp(6px, 1vw, 8px);
+    font-size: clamp(0.75rem, 1.2vw, 0.9rem);
     color: #fff;
+    line-height: 1.4;
 
     input[type="checkbox"] {
       accent-color: #70e61c;
-      width: 18px;
-      height: 18px;
-      margin-right: 6px;
+      width: clamp(16px, 2vw, 18px);
+      height: clamp(16px, 2vw, 18px);
+      margin-right: clamp(4px, 0.8vw, 6px);
+      margin-top: 2px;
+      flex-shrink: 0;
     }
 
     .privacy-link {
@@ -177,21 +180,22 @@
   }
 
   .contact-submit {
-    margin-top: 12px;
-    padding: 12px 32px;
+    margin-top: clamp(8px, 1.5vw, 12px);
+    padding: clamp(10px, 1.5vw, 12px) clamp(24px, 4vw, 32px);
     background: #bdbdbd;
     color: #fff;
     border: none;
-    border-radius: 8px;
-    font-size: 1.5rem;
+    border-radius: clamp(6px, 1vw, 8px);
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
     font-weight: 500;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: background 0.2s, transform 0.3s;
     box-shadow: 0 2px 8px rgba(20, 29, 47, 0.12);
 
     &:hover:enabled {
       background: #70e61c;
       color: #151e30;
+      transform: scale(1.05);
     }
 
     &:disabled {
@@ -204,40 +208,18 @@
 }
 
 .input-group {
-
-  input,
-  textarea {
-    border: 2px solid rgb(151, 71, 255); // Lila als Standard
-
-    &:focus {
-      border-color: rgb(151, 71, 255);
-    }
-  }
-
-  &.error input,
-  &.error textarea {
-    border-color: #ff2c2c; // Rot bei Fehler
-  }
-
-  &.success input,
-  &.success textarea {
-    border-color: #70e61c; // Grün bei Erfolg
-  }
-}
-
-.input-group {
   position: relative;
-  margin-bottom: 8px;
+  margin-bottom: clamp(4px, 1vw, 8px);
 
   input,
   textarea {
     width: 100%;
     background: #151e30;
     border: 2px solid #9747ff;
-    border-radius: 8px;
+    border-radius: clamp(6px, 1vw, 8px);
     color: #fff;
-    font-size: 1rem;
-    padding: 12px 16px;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    padding: clamp(10px, 1.5vw, 12px) clamp(12px, 2vw, 16px);
     outline: none;
     transition: border-color 0.2s;
     font-family: inherit;
@@ -256,10 +238,10 @@
 
   .input-icon {
     position: absolute;
-    top: 16px;
-    right: 18px;
-    width: 28px;
-    height: 28px;
+    top: clamp(12px, 2vw, 16px);
+    right: clamp(12px, 2vw, 18px);
+    width: clamp(20px, 3vw, 28px);
+    height: clamp(20px, 3vw, 28px);
     pointer-events: none;
   }
 
@@ -274,32 +256,40 @@
 
 .error-message {
   color: #ff2c2c;
-  font-size: 1rem;
-  margin: 4px 0 12px 8px;
+  font-size: clamp(0.85rem, 1.4vw, 1rem);
+  margin: clamp(2px, 0.5vw, 4px) 0 clamp(8px, 1.5vw, 12px) clamp(4px, 1vw, 8px);
   font-weight: 400;
 }
 
 .contact-arrow {
   position: absolute;
-  right: 40px;
-  bottom: 32px;
-  z-index: 3;
-  width: 48px;
-  height: 48px;
+  right: clamp(16px, 4vw, 40px);
+  bottom: -70px;
+  z-index: 10;
+  width: clamp(40px, 6vw, 56px);
+  height: clamp(40px, 6vw, 56px);
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.contact-arrow img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  filter: drop-shadow(0 0 12px #9747ff);
-  transition: background-image 0.2s;
-}
+  cursor: pointer;
+  transition: transform 0.3s;
 
-.contact-arrow:hover img {
-  content: url('../../../../public/assets/img/arrow-up-hover.png');
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 0 12px #9747ff);
+    transition: filter 0.2s;
+  }
+
+  &:hover img {
+    content: url('../../../../public/assets/img/arrow-up-hover.png');
+    filter: drop-shadow(0 0 16px #70e61c);
+  }
 }
 
 .center {
@@ -308,49 +298,188 @@
   align-items: center;
 }
 
-// Responsive Anpassungen
-@media (max-width: 900px) {
+// Responsive Breakpoints
+@media (max-width: 1000px) {
   .contact-content {
     flex-direction: column;
-    gap: 32px;
+    gap: clamp(24px, 4vw, 32px);
     align-items: stretch;
   }
 
-  .contact-info,
+  .contact-info {
+    max-width: 100%;
+    text-align: left;
+  }
+
   .contact-form {
     max-width: 100%;
   }
 
-  .contact-arrow {
-    right: 16px;
-    bottom: 16px;
-    width: 40px;
-    height: 40px;
+  .line-helper {
+    justify-content: flex-start;
+    left: 0;
+
+    h2 {
+      white-space: normal;
+    }
+
+    .contact-blue-line {
+      margin-left: 0;
+      order: -1;
+    }
   }
 }
 
 @media (max-width: 600px) {
   .contact-header {
     flex-direction: column;
+    align-items: flex-start;
     gap: 12px;
+
+    h1 {
+      font-size: 2.2rem;
+    }
 
     .contact-green-line {
       margin-left: 0;
       width: 100%;
+      max-width: 250px;
     }
   }
 
   .contact-container {
-    padding: 32px 0 24px 0;
+    padding: 40px 16px 100px 16px;
   }
 
   .contact-bg-shadow {
-    width: 100vw;
-    height: 300px;
+    width: 120vw;
+    height: 400px;
     top: auto;
     bottom: 0;
-    right: 0;
-    left: 0;
+    right: -20%;
     background-position: bottom right;
+    opacity: 0.7;
+  }
+
+  .line-helper {
+    align-items: center;
+    gap: 8px;
+
+    .contact-blue-line {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+
+  .contact-info p {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  .contact-form {
+    textarea {
+      min-height: 140px;
+    }
+  }
+
+  .contact-arrow {
+    width: 48px;
+    height: 48px;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-container {
+    padding: 30px 12px 80px 12px;
+  }
+
+  .line-helper h2 {
+    font-size: 1.1rem;
+  }
+
+  .contact-info p {
+    font-size: 0.9rem;
+  }
+
+  .contact-form {
+
+    input,
+    textarea {
+      font-size: 0.9rem;
+      padding: 10px 12px;
+    }
+
+    .contact-submit {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+
+  .contact-privacy {
+    font-size: 0.75rem;
+  }
+
+  .contact-arrow {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .line-helper h2 {
+    font-size: 1rem;
+  }
+
+  .contact-info p {
+    font-size: 0.85rem;
+  }
+}
+
+.success-notification {
+  background: rgba(112, 230, 28, 0.15);
+  border: 2px solid #70e61c;
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #70e61c;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  text-align: center;
+  margin: 12px 0;
+  animation: slideIn 0.3s ease;
+}
+
+.error-notification {
+  background: rgba(255, 44, 44, 0.15);
+  border: 2px solid #ff2c2c;
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #ff2c2c;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  text-align: center;
+  margin: 12px 0;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

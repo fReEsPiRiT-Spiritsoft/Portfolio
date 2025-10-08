@@ -24,7 +24,7 @@
 
         .purple-line {
             height: 4px;
-            width: 100px;
+            width: 110px;
             background: #9747FF;
             border-radius: 4px;
             margin-right: 16px;
@@ -274,8 +274,38 @@
     }
 }
 
+@media (max-width: 1200px) {
+    
+    
+    .portfolio-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 @media (max-width: 780px) {
     .portfolio-card {
         padding: 20px;
+    }
+}
+
+
+@media (max-width: 600px){
+    .card-frame {
+        cursor: pointer;
+        
+        &:hover {
+            img {
+                transform: none !important;
+            }
+            
+            .modal-overlay {
+                opacity: 0 !important;
+                pointer-events: none !important;
+            }
+        }
+    }
+    
+    .modal-overlay {
+        display: none !important;
     }
 }

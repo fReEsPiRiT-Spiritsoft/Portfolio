@@ -19,10 +19,10 @@ export class References {
       image: "assets/img/s-heinze-min.png"
     },
     {
-      text: "Outstanding developer with excellent problem-solving skills. Always delivers high-quality code on time.",
-      author: "A. Mueller",
-      role: "Project Manager",
-      image: "assets/img/placeholder-male.jpg"
+      text: "Mit Patrick zu arbeiten bedeutet, Logik in Aktion zu erleben. Sein außergewöhnliches Verständnis für Struktur und Zusammenhänge führt selbst bei komplexen Aufgaben zu klaren, durchdachten Lösungen.",
+      author: "D. Luzius",
+      role: "Team Partner",
+      image: "assets/img/daniel_img.jpg"
     },
     {
       text: "Great team player who brings innovative solutions to complex challenges. Highly recommended!",

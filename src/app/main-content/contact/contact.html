@@ -18,49 +18,56 @@
             </div>
             <form class="contact-form" (ngSubmit)="onSubmit()" #form="ngForm">
                 <div class="input-group" [class.error]="nameValid === false" [class.success]="nameValid === true">
-                    <input type="text" [placeholder]="'CONTACT.NAME' | translate" [(ngModel)]="name" name="name" required
-                        (ngModelChange)="validateName()" [disabled]="isSending" />
+                    <input type="text" [placeholder]="'CONTACT.NAME' | translate" [(ngModel)]="name" name="name"
+                        required (blur)="validateName()" [disabled]="isSending" />
                     @if (nameValid === false) {
                     <img src="assets/img/required.png" alt="Required" class="input-icon error-icon">
                     }
                     @if (nameValid === true) {
                     <img src="assets/img/readystate.png" alt="Valid" class="input-icon success-icon">
                     }
+                    <div class="input-message-placeholder">
+                        @if (nameValid === false) {
+                        <div class="error-message">{{ 'CONTACT.ERROR_NAME' | translate }}</div>
+                        }
+                    </div>
                 </div>
-                @if (nameValid === false) {
-                <div class="error-message">{{ 'CONTACT.ERROR_NAME' | translate }}</div>
-                }
 
                 <div class="input-group" [class.error]="emailValid === false" [class.success]="emailValid === true">
-                    <input type="email" [placeholder]="'CONTACT.EMAIL' | translate" [(ngModel)]="email" name="email" required
-                        (ngModelChange)="validateEmail()" [disabled]="isSending" />
+                    <input type="email" [placeholder]="'CONTACT.EMAIL' | translate" [(ngModel)]="email" name="email"
+                        required (blur)="validateEmail()" [disabled]="isSending" />
                     @if (emailValid === false) {
                     <img src="assets/img/required.png" alt="Required" class="input-icon error-icon">
                     }
                     @if (emailValid === true) {
                     <img src="assets/img/readystate.png" alt="Valid" class="input-icon success-icon">
                     }
+                    <div class="input-message-placeholder">
+                        @if (emailValid === false) {
+                        <div class="error-message">{{ 'CONTACT.ERROR_EMAIL' | translate }}</div>
+                        }
+                    </div>
                 </div>
-                @if (emailValid === false) {
-                <div class="error-message">{{ 'CONTACT.ERROR_EMAIL' | translate }}</div>
-                }
 
                 <div class="input-group" [class.error]="messageValid === false" [class.success]="messageValid === true">
-                    <textarea [placeholder]="'CONTACT.MESSAGE' | translate" [(ngModel)]="message" name="message" required
-                        (ngModelChange)="validateMessage()" [disabled]="isSending"></textarea>
+                    <textarea [placeholder]="'CONTACT.MESSAGE' | translate" [(ngModel)]="message" name="message"
+                        required (blur)="validateMessage()" [disabled]="isSending"></textarea>
                     @if (messageValid === false) {
                     <img src="assets/img/required.png" alt="Required" class="input-icon error-icon">
                     }
                     @if (messageValid === true) {
                     <img src="assets/img/readystate.png" alt="Valid" class="input-icon success-icon">
                     }
+                    <div class="input-message-placeholder">
+                        @if (messageValid === false) {
+                        <div class="error-message">{{ 'CONTACT.ERROR_MESSAGE' | translate }}</div>
+                        }
+                    </div>
                 </div>
-                @if (messageValid === false) {
-                <div class="error-message">{{ 'CONTACT.ERROR_MESSAGE' | translate }}</div>
-                }
 
                 <div class="contact-privacy">
-                    <input type="checkbox" id="privacy" [(ngModel)]="privacyChecked" required name="privacy" [disabled]="isSending">
+                    <input type="checkbox" id="privacy" [(ngModel)]="privacyChecked" required name="privacy"
+                        [disabled]="isSending">
                     <label for="privacy">
                         {{ 'CONTACT.PRIVACY' | translate }}
                         <a routerLink="/privacy" class="privacy-link">{{ 'CONTACT.PRIVACY_LINK' | translate }}</a>
@@ -68,17 +75,18 @@
                     </label>
                 </div>
 
-                @if (sendSuccess) {
-                <div class="success-notification">
-                    {{ 'CONTACT.SUCCESS' | translate }}
+                <div class="input-message-placeholder">
+                    @if (sendSuccess) {
+                    <div class="success-notification">
+                        {{ 'CONTACT.SUCCESS' | translate }}
+                    </div>
+                    }
+                    @if (sendError) {
+                    <div class="error-notification">
+                        {{ 'CONTACT.ERROR' | translate }}
+                    </div>
+                    }
                 </div>
-                }
-
-                @if (sendError) {
-                <div class="error-notification">
-                    {{ 'CONTACT.ERROR' | translate }}
-                </div>
-                }
 
                 <div class="center">
                     <button type="submit" class="contact-submit"
@@ -92,7 +100,7 @@
                 </div>
             </form>
         </div>
-        <a href="#top" class="contact-arrow">
+        <a class="contact-arrow" (click)="scrollToTop()">
             <img src="assets/img/arrow-up.png" alt="Go up">
         </a>
     </div>

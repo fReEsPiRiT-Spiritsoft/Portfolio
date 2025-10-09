@@ -7,7 +7,7 @@
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    padding-block: clamp(80px, 8vw, 140px);
+    padding-block: clamp(77px, 4vw, 138px);
     padding-inline: clamp(20px, 5vw, 100px);
 }
 
@@ -95,13 +95,14 @@
         width: clamp(320px, 45vw, 541px);
         height: auto;
         z-index: 2;
+        top: 50px;
         border-radius: 24px;
         object-fit: cover;
         right: clamp(0px, 15vw, 300px);
     }
 }
 
-// Tablet & Mobile Responsive
+
 @media (max-width: 1350px) {
     .about-me {
         flex-direction: column;

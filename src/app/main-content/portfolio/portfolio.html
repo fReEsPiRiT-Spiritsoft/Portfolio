@@ -16,15 +16,12 @@
             <div class="card-frame" (click)="onCardClick(project)">
                 <img [src]="project.image" [alt]="project.titleKey | translate" loading="lazy" />
 
-                <!-- Modal Content - nur auf Desktop -->
                 <div class="modal-overlay" [class.mobile-hidden]="isMobile()">
-                    <!-- Buttons oben im Bild -->
                     <div class="card-actions">
                         <a class="btn btn-outline" [href]="project.codeUrl" target="_blank">Github</a>
                         <a class="btn btn-primary" [href]="project.liveUrl" target="_blank">{{ 'PORTFOLIO.LIVE' | translate }}</a>
                     </div>
 
-                    <!-- Beschreibung unten im weißen Container -->
                     <div class="card-body">
                         <h3>{{ project.titleKey | translate }}</h3>
                         <p>{{ project.descKey | translate }}</p>

@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterLink } from '@angular/router';
-import { TranslateService, TranslatePipe} from '@ngx-translate/core';
+import { TranslateService, TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -42,21 +42,22 @@ export class Header {
 
   navigateToSection(section: string) {
     this.closeMenu();
-
+    const scrollWithOffset = (id: string, offset: number) => {
+      const element = document.getElementById(id);
+      if (element) {
+        const y = element.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    };
+    const headerHeight = 100;
     if (this.isPrivacyPage()) {
       this.router.navigate(['/']).then(() => {
         setTimeout(() => {
-          const element = document.getElementById(section);
-          if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-          }
+          scrollWithOffset(section, headerHeight);
         }, 100);
       });
     } else {
-      const element = document.getElementById(section);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+      scrollWithOffset(section, headerHeight);
     }
   }
 }

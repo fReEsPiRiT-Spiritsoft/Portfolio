@@ -2,7 +2,7 @@
     <div class="header-container">
         <div class="logo">
             <a routerLink="/" (click)="closeMenu()">
-                <span class="logo-bold">Patri</span><span class="logo-i">c</span><span class="logo-k">k</span>
+                <span (click)="navigateToSection('top')" class="logo-bold">Patri</span><span (click)="navigateToSection('top')"class="logo-i">c</span><span (click)="navigateToSection('top')"class="logo-k">k</span>
             </a>
         </div>
         <div class="right-side" [class.active]="menuOpen">

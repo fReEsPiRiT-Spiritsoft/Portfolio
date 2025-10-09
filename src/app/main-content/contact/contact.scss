@@ -25,7 +25,6 @@
   z-index: 2;
   width: min(1200px, 95vw);
   margin: 0 auto;
-  // padding: clamp(60px, 8vw, 120px) clamp(16px, 3vw, 0) clamp(80px, 10vw, 120px) clamp(16px, 3vw, 0);
   display: flex;
   flex-direction: column;
   gap: clamp(32px, 5vw, 40px);
@@ -123,7 +122,6 @@
   max-width: 583px;
   display: flex;
   flex-direction: column;
-  gap: clamp(12px, 2vw, 18px);
   margin-top: 0;
   padding-right: 10px;
 
@@ -298,7 +296,6 @@
   align-items: center;
 }
 
-// Responsive Breakpoints
 @media (max-width: 1000px) {
   .contact-content {
     flex-direction: column;
@@ -482,4 +479,23 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.input-message-placeholder {
+  min-height: 40px;
+}
+
+.error-message {
+  color: #e61c1c;
+  font-size: 0.95rem;
+}
+
+.success-notification {
+  color: #70e61c;
+  font-size: 0.95rem;
+}
+
+.error-notification {
+  color: #e61c1c;
+  font-size: 0.95rem;
 }

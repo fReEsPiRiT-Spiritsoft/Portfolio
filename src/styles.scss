@@ -5,7 +5,6 @@
   font-style: normal;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +14,7 @@
 html, body {
   width: 100%;
   min-height: 100vh;
-  overflow-x: hidden; // Verhindert horizontale Scrollbar
+  overflow-x: hidden; 
 }
 
 body {
@@ -25,15 +24,14 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-// Container-Klasse für 1440px maximale Breite und Zentrierung
 .container {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  padding: 0 20px; // Seitliche Abstände für kleinere Bildschirme
+  padding: 0 20px;
   
-  // Responsive Padding für sehr kleine Bildschirme
+
   @media (max-width: 480px) {
     padding: 0 15px;
   }
@@ -47,19 +45,16 @@ body {
   }
 }
 
-// Hauptapp-Container
 app-root {
   width: 100%;
-  // max-width: 1440px;
-  // margin: 0 auto;
   display: block;
-  overflow-x: hidden; // Verhindert horizontalen Overflow
+  overflow-x: hidden;
 }
 
 .main-content-wrapper {
   position: relative;
   width: 100%;
-  max-width: 1920px; // Begrenzung auf 1920px
+  max-width: 1920px; 
   margin: 0 auto;
   min-height: 85vh;
   display: flex;
@@ -67,9 +62,6 @@ app-root {
   justify-content: flex-start;
   align-items: center;
   overflow: visible;
-  
-  // top: -184px;
-  // padding-top: 150px;
 }
 
 .glow {
@@ -77,6 +69,13 @@ app-root {
   z-index: 0;
   pointer-events: none;
   user-select: none;
-  // padding-top: -50px;
+
 }
 
+#about-me,
+#skills,
+#portfolio,
+#contact,
+#top {
+  scroll-margin-top: 120px;
+}

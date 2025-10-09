@@ -85,7 +85,6 @@ h2 {
   }
 }
 
-// Glow Effects
 .glow {
   position: absolute;
   z-index: 0;
@@ -106,7 +105,6 @@ h2 {
   right: clamp(-80px, -8vw, -84px);
 }
 
-// Social Links Bottom
 .main-bottom {
   position: absolute;
   left: 0;
@@ -164,7 +162,6 @@ h2 {
   letter-spacing: 1px;
 }
 
-// Responsive Breakpoints
 @media (max-width: 900px) {
   
   
@@ -237,6 +234,7 @@ h2 {
   .glow-cyan {
     width: 100px;
     opacity: 0.3;
+    right: -21px;
   }
   
   .cta-btn {

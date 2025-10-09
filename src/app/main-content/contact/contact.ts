@@ -27,6 +27,19 @@ export class Contact {
   sendSuccess = false;
   sendError = false;
 
+  scrollToTop() {
+    if (window.location.pathname !== '/') {
+      window.location.href = '/#top';
+    } else {
+      const topElement = document.getElementById('top');
+      if (topElement) {
+        topElement.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+  }
+
   validateName() {
     this.nameValid = !!this.name.trim();
   }
@@ -60,7 +73,7 @@ export class Contact {
         .subscribe({
           next: (response) => {
             this.sendSuccess = true;
-            
+
             this.name = '';
             this.email = '';
             this.message = '';

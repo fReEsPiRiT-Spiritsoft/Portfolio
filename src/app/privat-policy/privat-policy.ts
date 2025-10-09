@@ -6,7 +6,7 @@ import { Footer } from '../shared/footer/footer';
 @Component({
   selector: 'app-privat-policy',
   standalone: true,
-  imports: [TranslatePipe, TranslateDirective, Header, Footer],
+  imports: [TranslatePipe, Header, Footer],
   templateUrl: './privat-policy.html',
   styleUrl: './privat-policy.scss'
 })

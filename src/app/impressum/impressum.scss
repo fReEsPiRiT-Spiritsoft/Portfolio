@@ -1,0 +1,85 @@
+.impressum-section {
+  min-height: 100vh;
+  background: #141d2f;
+//   padding: clamp(80px, 10vw, 120px) clamp(16px, 3vw, 0);
+  position: relative;
+}
+
+.impressum-container {
+  width: min(1200px, 95vw);
+  margin: 0 auto;
+  padding: clamp(40px, 6vw, 60px) clamp(20px, 4vw, 40px);
+  background: rgba(20, 29, 47, 0.6);
+  border-radius: 16px;
+  border: 1px solid rgba(151, 71, 255, 0.3);
+
+  h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    color: #fff;
+    margin: clamp(24px, 4vw, 40px);
+    text-align: center;
+    letter-spacing: 1px;
+  }
+}
+
+.impressum-content {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(24px, 4vw, 40px);
+}
+
+.impressum-block {
+  h2 {
+    font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+    font-weight: 700;
+    color: #70e61c;
+    margin-bottom: clamp(12px, 2vw, 16px);
+  }
+
+  h3 {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    font-weight: 600;
+    color: #9747ff;
+    margin-top: clamp(16px, 2.5vw, 20px);
+    margin-bottom: clamp(8px, 1.5vw, 12px);
+  }
+
+  p {
+    font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+    color: #fff;
+    line-height: 1.7;
+    margin-bottom: clamp(12px, 2vw, 16px);
+  }
+
+  .impressum-link {
+    color: #70e61c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #9747ff;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .impressum-section {
+    padding: 60px 16px;
+  }
+
+  .impressum-container {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .impressum-section {
+    padding: 40px 12px;
+  }
+
+  .impressum-container {
+    padding: 20px 16px;
+  }
+}

@@ -1,1 +1,64 @@
-<p>impressum works!</p>
+<app-header></app-header>
+
+<section class="impressum-section">
+    <div class="impressum-container">
+        <h1>{{ 'IMPRESSUM.TITLE' | translate }}</h1>
+        
+        <div class="impressum-content">
+            <section class="impressum-block">
+                <h2>{{ 'IMPRESSUM.INFO_TITLE' | translate }}</h2>
+                <p>
+                    Patrick Schmidt<br>
+                    Brüggerweg 7<br>
+                    59964 Medebach<br>
+                    Deutschland
+                </p>
+            </section>
+
+            <section class="impressum-block">
+                <h2>{{ 'IMPRESSUM.CONTACT_TITLE' | translate }}</h2>
+                <p>
+                    {{ 'IMPRESSUM.PHONE' | translate }}: [Deine Telefonnummer]<br>
+                    {{ 'IMPRESSUM.EMAIL' | translate }}: kontakt&#64;patrick-schmidt.de
+                </p>
+            </section>
+
+            <section class="impressum-block">
+                <h2>{{ 'IMPRESSUM.RESPONSIBLE_TITLE' | translate }}</h2>
+                <p>{{ 'IMPRESSUM.RESPONSIBLE_TEXT' | translate }}</p>
+            </section>
+
+            <section class="impressum-block">
+                <h2>{{ 'IMPRESSUM.DISCLAIMER_TITLE' | translate }}</h2>
+                <h3>{{ 'IMPRESSUM.DISCLAIMER_CONTENT_TITLE' | translate }}</h3>
+                <p>{{ 'IMPRESSUM.DISCLAIMER_CONTENT_TEXT' | translate }}</p>
+                
+                <h3>{{ 'IMPRESSUM.DISCLAIMER_LINKS_TITLE' | translate }}</h3>
+                <p>{{ 'IMPRESSUM.DISCLAIMER_LINKS_TEXT' | translate }}</p>
+            </section>
+
+            <section class="impressum-block">
+                <h2>{{ 'IMPRESSUM.COPYRIGHT_TITLE' | translate }}</h2>
+                <p>{{ 'IMPRESSUM.COPYRIGHT_TEXT' | translate }}</p>
+            </section>
+
+            <section class="impressum-block">
+                <h2>{{ 'IMPRESSUM.PRIVACY_TITLE' | translate }}</h2>
+                <p>{{ 'IMPRESSUM.PRIVACY_TEXT' | translate }}</p>
+            </section>
+
+            <section class="impressum-block">
+                <h2>{{ 'IMPRESSUM.DISPUTE_TITLE' | translate }}</h2>
+                <p>{{ 'IMPRESSUM.DISPUTE_TEXT' | translate }}</p>
+                <p>
+                    {{ 'IMPRESSUM.EU_PLATFORM' | translate }}: 
+                    <a href="https://ec.europa.eu/consumers/odr/" target="_blank" class="impressum-link">
+                        https://ec.europa.eu/consumers/odr/
+                    </a>
+                </p>
+            </section>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>

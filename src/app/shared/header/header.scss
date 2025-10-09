@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+}
+
 .shared-header {
     background-color: rgb(20, 29, 47);
     height: clamp(70px, 10vw, 109px);
@@ -37,7 +41,12 @@
         transform: scale(1.05);
     }
 }
-
+.logo-bold{
+    color: #fff;
+}
+.nav-link {
+  cursor: pointer;
+}
 .logo-i {
     color: #a259ff;
     font-weight: bold;

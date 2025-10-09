@@ -1,17 +1,19 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateService, TranslatePipe, TranslateDirective } from '@ngx-translate/core';
+import { Router, RouterLink } from '@angular/router';
+import { TranslateService, TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, TranslatePipe, TranslateDirective],
+  imports: [CommonModule, RouterLink, TranslatePipe],
   templateUrl: './header.html',
   styleUrl: './header.scss'
 })
 export class Header {
-  menuOpen = false;
   translate = inject(TranslateService);
+  router = inject(Router);
+  menuOpen = false;
   currentLang = 'en';
 
   constructor() {
@@ -32,5 +34,29 @@ export class Header {
 
   closeMenu() {
     this.menuOpen = false;
+  }
+
+  isPrivacyPage(): boolean {
+    return this.router.url.includes('/privacy') || this.router.url.includes('/impressum');
+  }
+
+  navigateToSection(section: string) {
+    this.closeMenu();
+
+    if (this.isPrivacyPage()) {
+      this.router.navigate(['/']).then(() => {
+        setTimeout(() => {
+          const element = document.getElementById(section);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 100);
+      });
+    } else {
+      const element = document.getElementById(section);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   }
 }

@@ -16,7 +16,7 @@ export class Portfolio {
     descKey: 'PORTFOLIO.PROJECTS.POLLO_DESC',
     image: 'assets/img/polo-loco.png',
     tech: ['JavaScript', 'HTML', 'CSS'],
-    liveUrl: 'https://patrick-schmidt.info/polo/',
+    liveUrl: 'https://el-polo-loco.patrick-schmidt.info/',
     codeUrl: 'https://github.com/fReEsPiRiT-Spiritsoft/polo-loco'
   },
   {
@@ -24,7 +24,7 @@ export class Portfolio {
     descKey: 'PORTFOLIO.PROJECTS.POKEDEX_DESC',
     image: 'assets/img/pokex-laptop.png',
     tech: ['JavaScript', 'CSS', 'REST API'],
-    liveUrl: 'https://patrick-schmidt.developerakademie.net/pokedex/',
+    liveUrl: 'https://pokedex.patrick-schmidt.info/',
     codeUrl: 'https://github.com/fReEsPiRiT-Spiritsoft/pokedex'
   },
   {
@@ -32,7 +32,7 @@ export class Portfolio {
     descKey: 'PORTFOLIO.PROJECTS.WINDOWS_DESC',
     image: 'assets/img/windows-laptop.png',
     tech: ['JavaScript', 'CSS', 'HTML'],
-    liveUrl: 'https://patrick-schmidt.info/windows',
+    liveUrl: 'https://windows.patrick-schmidt.info/',
     codeUrl: 'https://github.com/fReEsPiRiT-Spiritsoft/Website-im-Windows-Style'
   }
 ];

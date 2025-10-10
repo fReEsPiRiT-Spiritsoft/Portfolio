@@ -189,7 +189,7 @@
     }
 
     .about-left {
-        margin-top: clamp(280px, 115vw, 691px);
+        margin-top: clamp(280px, 119vw, 728px);
 
         h2 {
             font-size: 2rem;
@@ -208,7 +208,7 @@
     }
 
     .about-left {
-        margin-top: clamp(242px, 203vw, 807px);
+        margin-top: clamp(248px, 223vw, 903px);
 
         h2 {
             font-size: 1.8rem;
@@ -239,11 +239,13 @@
 
     .about-right .about-image {
         width: clamp(240px, 132vw, 529px);
-        margin-top: 145px;
+        margin-top: 205px;
+    
     }
 
     .about-right .about-shadow {
         width: clamp(280px, 145vw, 451px);
+        margin-top: 205px;
     }
 }
 

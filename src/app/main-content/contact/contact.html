@@ -90,6 +90,7 @@
 
                 <div class="center">
                     <button type="submit" class="contact-submit"
+                        [class.active]="nameValid && emailValid && messageValid && privacyChecked"
                         [disabled]="!(nameValid && emailValid && messageValid && privacyChecked) || isSending">
                         @if (isSending) {
                         <span>{{ 'CONTACT.SENDING' | translate }}</span>

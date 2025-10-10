@@ -4,13 +4,13 @@
         <img src="assets/img/blue-shadow.png" class="glow glow-cyan" alt="">
 
         <div class="main-row">
-            <div class="vertical-text">I am</div>
             <div class="main-content">
+                <div class="vertical-text">I am</div>
                 <h1>Patrick Schmidt</h1>
                 <h2>FULLSTACK DEVELOPER</h2>
-                <a href="#contact">
-                    <button class="cta-btn">{{ 'ATF.CTA' | translate }}</button>
-                </a>F
+                <a (click)="scrollToContact()">
+                    <button (click)="scrollToContact()" class="cta-btn">{{ 'ATF.CTA' | translate }}</button>
+                </a>
             </div>
         </div>
 
@@ -20,7 +20,7 @@
                 <a href="https://github.com/fReEsPiRiT-Spiritsoft" target="_blank" aria-label="GitHub">
                     <img src="assets/img/guthub-btn.png" alt="GitHub">
                 </a>
-                <a  (click)="scrollToContact()" aria-label="Contact">
+                <a (click)="scrollToContact()" aria-label="Contact">
                     <img src="assets/img/mail-btn.png" alt="Email">
                 </a>
                 <a href="https://www.linkedin.com/in/patrick-schmidt-818052379/" target="_blank" aria-label="LinkedIn">

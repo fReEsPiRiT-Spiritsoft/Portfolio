@@ -19,12 +19,15 @@ export class Header {
   constructor() {
     this.translate.addLangs(['de', 'en']);
     this.translate.setFallbackLang('en');
-    this.translate.use('en');
+    const savedLang = localStorage.getItem('language') || 'en';
+    this.currentLang = savedLang;
+    this.translate.use(savedLang);
   }
 
   switchLanguage(lang: string) {
     this.translate.use(lang);
     this.currentLang = lang;
+    localStorage.setItem('language', lang);
     this.closeMenu();
   }
 

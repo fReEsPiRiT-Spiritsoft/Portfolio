@@ -16,7 +16,7 @@ a{
 }
 
 .header-container {
-    max-width: 1440px;
+    max-width: 1853px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -178,7 +178,7 @@ a{
         top: 0;
         right: -100%;
         width: 75%;
-        max-width: 400px;
+        max-width: 600px;
         height: 100vh;
         background: rgba(20, 29, 47, 0.98);
         backdrop-filter: blur(20px);
@@ -233,7 +233,7 @@ a{
     }
 
     .right-side {
-        width: 85%;
+        width: 100%;
     }
 
     .nav-link {

@@ -8,7 +8,7 @@
     max-width: 1920px;
     margin: 0 auto;
     padding-block: clamp(77px, 4vw, 138px);
-    padding-inline: clamp(20px, 5vw, 100px);
+    // padding-inline: clamp(20px, 5vw, 100px);
 }
 
 .about-left {
@@ -123,7 +123,7 @@
         margin: 0;
         max-width: 100%;
         order: 2;
-        margin-top: clamp(321px, 67vw, 706px);
+        margin-top: clamp(321px, 80vw, 766px);
     }
 
     .about-right {
@@ -148,7 +148,7 @@
         width: clamp(280px, 70vw, 500px);
         height: auto;
         z-index: 3;
-        top: 0;
+        top: 35px;
         left: 0;
         transform: none;
         right: 0;
@@ -208,7 +208,7 @@
     }
 
     .about-left {
-        margin-top: clamp(241px, 158vw, 685px);
+        margin-top: clamp(242px, 203vw, 807px);
 
         h2 {
             font-size: 1.8rem;
@@ -238,8 +238,8 @@
     }
 
     .about-right .about-image {
-        width: clamp(240px, 122vw, 529px);
-        margin-top: 30px;
+        width: clamp(240px, 132vw, 529px);
+        margin-top: 145px;
     }
 
     .about-right .about-shadow {
@@ -249,7 +249,7 @@
 
 @media (max-width: 400px) {
     .about-left {
-        margin-top: clamp(655px, 43vw, 295px);
+        margin-top: clamp(848px, 45vw, 297px);
 
 
         h2 {

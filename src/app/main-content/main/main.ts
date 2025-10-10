@@ -11,7 +11,7 @@ import { TranslatePipe, TranslateDirective } from '@ngx-translate/core';
 export class Main {
 
   scrollToContact() {
-    const headerHeight = 100; // Passe diesen Wert an die Höhe deines Headers an!
+    const headerHeight = 100;
     if (window.location.pathname !== '/') {
       window.location.href = '/#contact';
     } else {

@@ -22,11 +22,9 @@
 
 .main-row {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: clamp(8px, 2vw, 20px);
-  z-index: 1;
-  margin-bottom: clamp(40px, 8vh, 80px);
+  align-items: center;
+  width: 100%;
 }
 
 .vertical-text {
@@ -67,6 +65,26 @@ h2 {
   transition: all 0.3s;
 }
 
+.main-content {
+  position: relative;
+  text-align: center;
+  
+  .vertical-text {
+    position: absolute;
+    left: -150px; // Passe den Abstand nach links an
+    top: 40%;
+    // transform: translateY(-50%) rotate(-90deg);
+    transform-origin: center;
+    font-size: clamp(2rem, 5vw, 6rem);
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  h1, h2, .cta-btn {
+    margin: 0 auto;
+  }
+}
+
 .cta-btn {
   background: #70E61C;
   color: #fff;
@@ -78,7 +96,7 @@ h2 {
   cursor: pointer;
   transition: background 0.3s, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: clamp(8px, 2vh, 16px);
-  
+
   &:hover {
     background: rgb(151, 71, 255);
     transform: scale(1.1);
@@ -138,17 +156,18 @@ h2 {
   align-items: center;
   justify-content: center;
   transition: all 0.3s;
-  
+
   img {
     width: clamp(24px, 4vw, 36px);
     height: clamp(24px, 4vw, 36px);
     object-fit: contain;
     transition: all 0.3s;
   }
-  
+
   &:hover img {
     filter: drop-shadow(0 0 12px #70e61c);
     transform: scale(1.2);
+    cursor: pointer;
   }
 }
 
@@ -163,13 +182,13 @@ h2 {
 }
 
 @media (max-width: 900px) {
-  
-  
-  
+
+
+
   .main-content {
     gap: 16px;
   }
-  
+
   .glow-purple,
   .glow-cyan {
     top: 50%;
@@ -180,18 +199,18 @@ h2 {
   .main-content-wrapper {
     padding-top: 120px;
   }
-  
+
 
   .right-side {
     writing-mode: horizontal-tb;
     transform: rotate(90deg);
-    margin-top: 16px;
+    margin-bottom: 57px;
   }
-  
+
   h1 {
     letter-spacing: -0.5px;
   }
-  
+
   h2 {
     letter-spacing: 1px;
   }
@@ -201,16 +220,17 @@ h2 {
   .main-content-wrapper {
     padding-top: 100px;
   }
-  
+
   .glow-purple,
   .glow-cyan {
     top: 40%;
   }
+
   .cta-btn {
     font-size: 0.9rem;
     padding: 10px 20px;
   }
-  
+
   .left-side a img {
     width: 28px;
     height: 28px;
@@ -221,22 +241,22 @@ h2 {
   h1 {
     font-size: 28px;
   }
-  
+
   h2 {
     font-size: 14px;
   }
-  
+
   .vertical-text {
     font-size: 18px;
   }
-  
+
   .glow-purple,
   .glow-cyan {
     width: 100px;
     opacity: 0.3;
     right: -21px;
   }
-  
+
   .cta-btn {
     font-size: 0.8rem;
     padding: 8px 16px;

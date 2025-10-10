@@ -25,7 +25,7 @@
             background: #9747FF;
             border-radius: 4px;
             margin-right: 16px;
-            margin-left: -119px;
+            margin-left: -6px;
             margin-top: 27px;
         }
     }
@@ -266,8 +266,8 @@
 }
 
 @media (max-width: 1200px) {
-    
-    
+
+
     .portfolio-grid {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -280,22 +280,22 @@
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
     .card-frame {
         cursor: pointer;
-        
+
         &:hover {
             img {
                 transform: none !important;
             }
-            
+
             .modal-overlay {
                 opacity: 0 !important;
                 pointer-events: none !important;
             }
         }
     }
-    
+
     .modal-overlay {
         display: none !important;
     }

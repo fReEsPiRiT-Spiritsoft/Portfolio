@@ -1,9 +1,9 @@
 .skills-section {
   display: flex;
+  justify-content: space-between;
   gap: clamp(40px, 15vw, 300px);
   position: relative;
   width: min(1920px, 90%);
-  max-width: 1440px;
   margin: 0 auto;
   background: transparent;
   // padding-block: clamp(60px, 8vw, 120px);

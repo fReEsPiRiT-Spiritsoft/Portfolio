@@ -34,6 +34,14 @@ export class Portfolio {
     tech: ['JavaScript', 'CSS', 'HTML'],
     liveUrl: 'https://windows.patrick-schmidt.info/',
     codeUrl: 'https://github.com/fReEsPiRiT-Spiritsoft/Website-im-Windows-Style'
+  },
+  {
+    titleKey: 'PORTFOLIO.PROJECTS.JOIN_TITLE',
+    descKey: 'PORTFOLIO.PROJECTS.JOIN_DESC',
+    image: 'assets/img/join-laptop.png',
+    tech: ['Typescript', 'SCSS', 'Angular'],
+    liveUrl: 'https://join.patrick-schmidt.info/',
+    codeUrl: 'https://github.com/fReEsPiRiT-Spiritsoft/join'
   }
 ];
 

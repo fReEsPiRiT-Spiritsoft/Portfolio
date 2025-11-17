@@ -19,10 +19,10 @@
 },
 "SKILLS": {
   "TITLE": "My skills",
-  "DESCRIPTION1": "Highlight your experience of working on different projects using different front-end technologies (such as HTML, CSS, JavaScript, etc.) and emphasise your openness to learning and adapting to new technologies.",
-  "DESCRIPTION2": "Mention the importance of continuing education to keep up with the rapid changes in web development.",
+  "DESCRIPTION1": "I am skilled in modern frontend technologies like HTML, CSS, JavaScript, and Angular, applying them effectively in projects. My focus is on clean code and intuitive user interfaces.",
+  "DESCRIPTION2": "Continuous learning keeps my knowledge up to date, and I am open to new tools and frameworks to create innovative solutions.",
   "HIGHLIGHT": "Looking for another skill?",
-  "LEARNING": "Reveal enthusiasm for learning new technologies and frameworks.",
+  "LEARNING": "I am motivated to learn new technologies and methods and apply them directly in practice.",
   "BUTTON": "Get in touch"
 },
 "PORTFOLIO": {
@@ -35,7 +35,9 @@
     "POKEDEX_TITLE": "Pokedex",
     "POKEDEX_DESC": "A Pokédex based on the PokéAPI with various features. Choose between card view and arena view, all Pokémon come with their own sounds. Discover the world of Pokémon in my unique Pokédex.",
     "WINDOWS_TITLE": "Windows Clone",
-    "WINDOWS_DESC": "A website that simulates Windows, featuring a file system, Wi-Fi, settings, browser, editor, code editor, terminal, games, and more."
+    "WINDOWS_DESC": "A website that simulates Windows, featuring a file system, Wi-Fi, settings, browser, editor, code editor, terminal, games, and more.",
+    "JOIN_TITLE": "JOIN",
+    "JOIN_DESC": "Kanban Project Management Tool, with real-time updates, drag & drop, and secure Firebase authentication"
   }
 },
 "REFERENCES": {
@@ -63,7 +65,7 @@
 "CONTACT": {
   "TITLE": "Contact",
   "SUBTITLE": "Got a problem to solve?",
-  "DESCRIPTION": "Encourage people to contact you and describe what role you are interested in. Show that you will add value to their projects through your work.",
+  "DESCRIPTION": "Feel free to get in touch—whether for a project, collaboration, or feedback. Together, we’ll find the right solution for your needs.",
   "CTA": "Need a developer? Contact me!",
   "NAME": "Your name",
   "EMAIL": "Your email",

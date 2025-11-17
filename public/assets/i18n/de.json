@@ -19,10 +19,10 @@
 },
 "SKILLS": {
   "TITLE": "Meine Skills",
-  "DESCRIPTION1": "Hebe deine Erfahrung hervor, verschiedene Projekte mit unterschiedlichen Frontend-Technologien (wie HTML, CSS, JavaScript usw.) umgesetzt zu haben und betone deine Offenheit für das Lernen und Anpassen an neue Technologien.",
-  "DESCRIPTION2": "Erwähne die Bedeutung von Weiterbildung, um mit den schnellen Veränderungen in der Webentwicklung Schritt zu halten.",
+  "DESCRIPTION1": "Ich beherrsche moderne Frontend-Technologien wie HTML, CSS, JavaScript und Angular und setze diese gezielt in Projekten ein. Mein Fokus liegt auf sauberem Code und intuitiven Benutzeroberflächen.",
+  "DESCRIPTION2": "Durch kontinuierliche Weiterbildung halte ich mein Wissen aktuell und bin offen für neue Tools und Frameworks, um innovative Lösungen zu entwickeln.",
   "HIGHLIGHT": "Du suchst nach einer anderen Fähigkeit?",
-  "LEARNING": "Zeige Begeisterung für das Lernen neuer Technologien und Frameworks.",
+  "LEARNING": "Ich bin motiviert, neue Technologien und Methoden zu lernen und direkt in der Praxis anzuwenden.",
   "BUTTON": "Kontakt aufnehmen"
 },
 "PORTFOLIO": {
@@ -35,7 +35,9 @@
     "POKEDEX_TITLE": "Pokedex",
     "POKEDEX_DESC": "Ein Pokédex basierend auf der PokéAPI mit verschiedenen Features. Wähle zwischen Karten- und Arenamodus, alle Pokémon haben eigene Sounds. Entdecke die Pokémon-Welt in meinem einzigartigen Pokédex.",
     "WINDOWS_TITLE": "Windows Clone",
-    "WINDOWS_DESC": "Eine Website, die Windows simuliert – mit Dateisystem, WLAN, Einstellungen, Browser, Editor, Code-Editor, Terminal, Spielen und mehr."
+    "WINDOWS_DESC": "Eine Website, die Windows simuliert – mit Dateisystem, WLAN, Einstellungen, Browser, Editor, Code-Editor, Terminal, Spielen und mehr.",
+    "JOIN_TITLE": "JOIN",
+    "JOIN_DESC": "Ein Kanban Projekt Management Tool, mit real-time updates, drag & drop, und Firebase"
   }
 },
 "REFERENCES": {
@@ -63,7 +65,7 @@
 "CONTACT": {
   "TITLE": "Kontakt",
   "SUBTITLE": "Hast du ein Problem zu lösen?",
-  "DESCRIPTION": "Ermutige Menschen, dich zu kontaktieren und beschreibe, für welche Rolle du dich interessierst. Zeige, dass du durch deine Arbeit einen Mehrwert für ihre Projekte bringst.",
+  "DESCRIPTION": "Ich freue mich über deine Nachricht – ob Projektanfrage, Zusammenarbeit oder Feedback. Gemeinsam finden wir die passende Lösung für dein Anliegen.",
   "CTA": "Du suchst einen Entwickler? Kontaktiere mich!",
   "NAME": "Dein Name",
   "EMAIL": "Deine E-Mail",

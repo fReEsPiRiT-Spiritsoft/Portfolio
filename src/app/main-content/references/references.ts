@@ -26,9 +26,9 @@ export class References {
       image: 'assets/img/daniel_img.jpg'
     },
     {
-      textKey: 'REFERENCES.WEBER.TEXT',
-      authorKey: 'REFERENCES.WEBER.AUTHOR',
-      roleKey: 'REFERENCES.WEBER.ROLE',
+      textKey: 'REFERENCES.KAJA.TEXT',
+      authorKey: 'REFERENCES.KAJA.AUTHOR',
+      roleKey: 'REFERENCES.KAJA.ROLE',
       image: 'assets/img/placeholder-male.jpg'
     },
     {

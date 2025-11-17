@@ -51,10 +51,10 @@
     "AUTHOR": "D. Luzius",
     "ROLE": "Team Partner"
   },
-  "WEBER": {
-    "TEXT": "Großartiger Teamplayer, der innovative Lösungen für komplexe Herausforderungen liefert. Sehr empfehlenswert!",
-    "AUTHOR": "S. Weber",
-    "ROLE": "Lead Developer"
+  "KAJA": {
+    "TEXT": "Patrick hatte den besten Überblick über die Firebase-Einbindung sowie die Struktur und Funktionsweise der TypeScript-Dateien innerhalb unseres Angular-Projekts. Fachlich war er ohne Zweifel der Begabteste im Team. Seine Fähigkeit, komplexe technische Zusammenhänge schnell zu erfassen und klar zu strukturieren, hat entscheidend dazu beigetragen, dass wir unsere Entwicklungsprozesse effizient gestalten konnten. Durch seine Kompetenz und seinen Weitblick konnten technische Herausforderungen früh erkannt und sauber gelöst werden.",
+    "AUTHOR": "K. Yoganathan",
+    "ROLE": "Team Partner"
   },
   "FISCHER": {
     "TEXT": "Professionell, zuverlässig und immer bereit, einen Schritt mehr zu gehen. Es ist eine Freude, mit ihm zu arbeiten.",

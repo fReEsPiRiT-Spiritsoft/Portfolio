@@ -26,9 +26,9 @@ export class References {
       image: 'assets/img/daniel_img.jpg'
     },
     {
-      textKey: 'REFERENCES.KAJA.TEXT',
-      authorKey: 'REFERENCES.KAJA.AUTHOR',
-      roleKey: 'REFERENCES.KAJA.ROLE',
+      textKey: 'REFERENCES.KAJANAN.TEXT',
+      authorKey: 'REFERENCES.KAJANAN.AUTHOR',
+      roleKey: 'REFERENCES.KAJANAN.ROLE',
       image: 'assets/img/placeholder-male.jpg'
     },
     {
